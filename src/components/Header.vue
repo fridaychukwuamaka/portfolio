@@ -89,6 +89,7 @@ export default {
 }
 #menu-icon {
   display: none;
+  -webkit-tap-highlight-color: transparent;
 }
 #menu-open {
   display: none;
