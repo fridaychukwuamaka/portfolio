@@ -61,8 +61,10 @@ export default {
   max-width: calc(100vw - 30px);
   flex-wrap: wrap;
   row-gap: 25px;
+  grid-row-gap: 25px;
   margin-bottom: 100px;
   column-gap: 20px;
+  grid-column-gap: 20px;
 }
 #icon{
   display: flex;
