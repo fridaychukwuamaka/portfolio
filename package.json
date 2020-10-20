@@ -7,7 +7,11 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-aos": "^1.1.0",
+    "vue-feather": "^1.0.1",
+    "vue-feather-icons": "^5.1.0",
+    "vue-router": "^3.4.7"
   },
   "devDependencies": {
     "@vue/cli-service": "^4.2.0",
