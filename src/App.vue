@@ -59,7 +59,12 @@
         </ul>
       </div>
       <div id="to-top">
-        <a href="#cover">&&carat</a>
+        <a href="#mobile"
+          ><chevron-up-icon
+            class="chevron-up-icon"
+            size="1.5x"
+          ></chevron-up-icon
+        ></a>
       </div>
     </div>
   </div>
@@ -75,6 +80,7 @@ import Experience from "./components/Experience";
 import Header from "./components/Header";
 import MoreAbout from "./components/MoreAbout";
 import SplashScreen from "./components/SplashScreen";
+import { ChevronUpIcon } from "vue-feather-icons";
 
 export default {
   name: "App",
@@ -86,6 +92,7 @@ export default {
     MoreAbout,
     Work,
     Experience,
+    ChevronUpIcon,
     Contact,
   },
   data: () => {
@@ -176,7 +183,7 @@ p:active {
   flex-direction: column;
   align-items: center;
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -257,7 +264,17 @@ a{
   }
   #to-top {
     display: block;
+    background-color: black;
+    width: fit-content;
     margin: 15px;
+    padding: 5px 10px;
+    margin-left: auto;
+  }
+  .chevron-up-icon {
+    color: white;
+  }
+  #others{
+    margin-bottom: 0;
   }
   #to-top a {
     text-decoration: none;

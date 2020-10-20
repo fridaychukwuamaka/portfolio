@@ -9,9 +9,9 @@
       <div v-show="menu" id="menu-open">
         <div @click="menu = !menu" id="shadowed"></div>
         <div id="none-shadow">
-          <arrow-left-icon id="back" @click="menu = !menu">back</arrow-left-icon>
+          <arrow-left-icon id="back" @click="menu = !menu"></arrow-left-icon>
           <ul>
-            <a :href="'#cover'">
+            <a :href="'#mobile'">
               <li @click="toggle(0)">
                 <a>Home</a>
                 <div :class="{ selected: selectMenu == 0 }"></div>

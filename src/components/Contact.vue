@@ -9,14 +9,44 @@
       You want to talk to me, feel free to email or DM me using the following
       platforms.
     </p>
+    <div id="icon-row">
+      <div id="icon">
+        <linkedin-icon size="1.5x"></linkedin-icon>
+        <p>LinkedIn</p>
+      </div>
+      <div id="icon">
+        <github-icon size="1.5x"></github-icon>
+        <p>GitHub</p>
+      </div>
+      <div id="icon">
+        <twitter-icon size="1.5x"></twitter-icon>
+        <p>Twitter</p>
+      </div>
+      <div id="icon">
+        <mail-icon size="1.5x"></mail-icon>
+        <p>Email</p>
+      </div>
+    </div>
 
     <div id="footer">Designed & developed by<br />Chukwuamaka Friday</div>
   </div>
 </template>
 
 <script>
+import {
+  LinkedinIcon,
+  GithubIcon,
+  TwitterIcon,
+  MailIcon,
+} from "vue-feather-icons";
 export default {
   name: "Contact",
+  components: {
+    LinkedinIcon,
+    GithubIcon,
+    TwitterIcon,
+    MailIcon,
+  },
 };
 </script>
 
@@ -24,6 +54,24 @@ export default {
 #contact {
   padding: 15px;
   margin-top: 30px;
+}
+#icon-row{
+  margin-top: 25px;
+  display: flex;
+  max-width: calc(100vw - 30px);
+  flex-wrap: wrap;
+  row-gap: 25px;
+  margin-bottom: 100px;
+  column-gap: 20px;
+}
+#icon{
+  display: flex;
+  align-items: center;
+  /* margin-right: 30px; */
+}
+#icon p{
+  margin: 0;
+  margin-left: 5px;
 }
 #title p {
   margin-top: 0;
@@ -68,6 +116,6 @@ export default {
   line-height: 45px;
   margin: 0;
   text-align: left;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
 }
 </style>

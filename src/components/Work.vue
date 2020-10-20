@@ -16,7 +16,11 @@
           libero incidunt!
         </p>
         <div class="link">
-          <a href>Link</a>
+          <a href
+            ><arrow-right-icon id="back" @click="menu = !menu"
+              ></arrow-right-icon
+            ></a
+          >
         </div>
       </div>
       <div id="project">
@@ -28,7 +32,11 @@
           libero incidunt!
         </p>
         <div class="link">
-          <a href>Link</a>
+          <a href
+            ><arrow-right-icon id="back" @click="menu = !menu"
+              ></arrow-right-icon
+            ></a
+          >
         </div>
       </div>
 
@@ -41,7 +49,11 @@
           libero incidunt!
         </p>
         <div class="link">
-          <a href>Link</a>
+          <a href
+            ><arrow-right-icon id="back" @click="menu = !menu"
+              ></arrow-right-icon
+            ></a
+          >
         </div>
       </div>
       <div id="project">
@@ -54,7 +66,11 @@
         </p>
 
         <div class="link">
-          <a href>Link</a>
+          <a href
+            ><arrow-right-icon size="21" id="back" @click="menu = !menu"
+              ></arrow-right-icon
+            ></a
+          >
         </div>
       </div>
     </div>
@@ -62,8 +78,13 @@
 </template>
 
 <script>
+import { ArrowRightIcon } from "vue-feather-icons";
+
 export default {
   name: "Work",
+  components: {
+    ArrowRightIcon,
+  },
 };
 </script>
 

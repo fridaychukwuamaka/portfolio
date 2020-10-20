@@ -51,21 +51,26 @@
         </div>
       </div>
     </transition>
-
-    <div class="title">
-      <div id="hello">
-        <p id="first">Hello,</p>
-        <p id="second">I'm Chukwuamaka Friday</p>
+    <vue-aos animation-class="fadeIn animated">
+      <div class="title">
+        <div id="hello">
+          <p id="first">Hello,</p>
+          <p id="second">I'm Chukwuamaka Friday</p>
+        </div>
+        <p id="story">I am a full-stack web developer and a mobile developer</p>
       </div>
-      <p id="story">I am a full-stack web developer and a mobile developer</p>
-    </div>
+    </vue-aos>
     <div style="height: 75px"></div>
   </div>
 </template>
 
 <script>
+import VueAos from "vue-aos";
 export default {
   name: "Home",
+  components: {
+    VueAos,
+  },
   props: {
     msg: String,
   },
@@ -196,7 +201,7 @@ export default {
 
     top: 0;
     right: 0;
-  /*width: 100%*/;
+    /*width: 100%*/
     height: 100%;
   }
   #shadowed {
@@ -249,12 +254,12 @@ export default {
   .selected {
     transition: width 01s ease-in-out;
 
-  width: 100% !important;
+    width: 100% !important;
   }
   #none-shadow ul li:hover div {
     transition: width 01s ease-in-out;
 
-  width: 100%;
+    width: 100%;
   }
 
   #logo {
