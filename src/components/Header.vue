@@ -2,7 +2,7 @@
   <div id="header">
     <div class="heading">
       <img id="logo" alt="logo" src="../assets/images/Group 7.png" />
-      <menu-icon @click="menu = !menu"></menu-icon>
+      <menu-icon id="menu-icon" @click="menu = !menu"></menu-icon>
     </div>
 
     <transition name="fade">
@@ -87,7 +87,7 @@ export default {
   right: 0;
   background: #f5f0e3;
 }
-.heading p {
+#menu-icon {
   display: none;
 }
 #menu-open {
@@ -114,6 +114,14 @@ export default {
     justify-content: space-between;
     align-items: center;
   }
+  #menu-icon {
+  display: block;
+    margin: 0;
+    height: fit-content;
+    font-family: Montserrat-medium;
+    cursor: pointer;
+    height: unset;
+}
   .heading p {
     display: block;
     margin: 0;
