@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <transition name="fade">
-      <div v-if="!splashScreen">
-        <SplashScreen />
-      </div>
-    </transition>
+    <!-- <transition name="fade"> -->
+    <div v-if="!splashScreen">
+      <SplashScreen />
+    </div>
+    <!-- </transition> -->
 
     <div id="others" v-if="splashScreen">
       <Header />
@@ -33,27 +33,27 @@
       <div id="menu">
         <ul>
           <router-link to="/" class="route">
-            <li>
+            <li @click="activeLink(0)">
               <p>Home</p>
-              <div></div>
+              <div :class="{growed: link == 0}" ></div>
             </li>
           </router-link>
           <router-link to="/about" class="route">
-            <li>
+            <li @click="activeLink(1)">
               <p>About</p>
-              <div></div>
+              <div :class="{growed: link == 1}" ></div>
             </li>
           </router-link>
           <router-link to="/work" class="route">
-            <li>
+            <li @click="activeLink(2)">
               <p>My work</p>
-              <div></div>
+              <div :class="{growed: link == 2}" ></div>
             </li>
           </router-link>
           <router-link to="/experience" class="route">
-            <li>
+            <li @click="activeLink(3)">
               <p>Experience</p>
-              <div></div>
+                <div :class="{growed: link == 3}" ></div>
             </li>
           </router-link>
         </ul>
@@ -99,27 +99,12 @@ export default {
     return {
       splashScreen: false,
       windowWidth: window.screen.availWidth,
+      link: 0,
     };
   },
   methods: {
-    goTo(val) {
-      switch (val) {
-        case "home":
-          this.page = "home";
-          break;
-        case "about":
-          this.page = "about";
-          break;
-        case "experience":
-          this.page = "experience";
-          break;
-        case "work":
-          this.page = "work";
-          break;
-
-        default:
-          break;
-      }
+    activeLink(val) {
+      this.link = val;
     },
   },
   beforeCreate: function() {
@@ -181,8 +166,10 @@ p:active {
   font-size: 14px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  /* align-items: center; */
 }
+
 a {
   text-decoration: none;
 }
@@ -195,7 +182,7 @@ a {
 
 #menu ul li div {
   height: 1.5px;
-  width: 50px;
+  width: 0;
   background-color: #000000;
   border-radius: 1000px;
 }
@@ -221,6 +208,10 @@ a {
 #others {
   margin-bottom: 75px;
 }
+.growed {
+  transition: width 01s ease-in-out;
+  width: 100% !important;
+}
 
 .fade-enter {
   opacity: 0;
@@ -233,6 +224,20 @@ a {
 .fade-leave-active {
   transition: opacity 0.5s ease-out;
   opacity: 0;
+}
+.grow-enter {
+  width: 0;
+}
+.grow-enter-active {
+  transition: width 1s ease-in;
+  width: 100% !important;
+}
+.grow-leave-active {
+  transition: width 1s ease-out;
+  width: 0;
+}
+.grow-leave {
+  width: 0;
 }
 @font-face {
   font-family: Montserrat-Regular;
@@ -273,7 +278,7 @@ a {
   .chevron-up-icon {
     color: white;
   }
-  #others{
+  #others {
     margin-bottom: 0;
   }
   #to-top a {

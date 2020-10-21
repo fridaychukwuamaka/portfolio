@@ -51,7 +51,7 @@
         </div>
       </div>
     </transition>
-    <vue-aos animation-class="fadeIn animated">
+    <transition name="slide" appear >
       <div class="title">
         <div id="hello">
           <p id="first">Hello,</p>
@@ -59,7 +59,7 @@
         </div>
         <p id="story">I am a full-stack web developer and a mobile developer</p>
       </div>
-    </vue-aos>
+    </transition>
     <div style="height: 75px"></div>
   </div>
 </template>
@@ -115,10 +115,11 @@ export default {
   padding: 10px;
 }
 #cover {
-  height: calc(100vh - 75px);
+  height: calc(100vh - 144.5px);
   /* width: 100%; */
   display: -webkit-box;
   display: -ms-flexbox;
+  margin-top: 69.5px;
   display: flex;
   /* -webkit-box-pack: center; */
   -ms-flex-pack: center;
@@ -161,6 +162,18 @@ export default {
   margin: auto;
   width: fit-content;
   height: fit-content;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 3s ease-in;
+}
+.fade-leave {
+}
+.fade-leave-active {
+  transition: opacity 3s ease-out;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 760px) {

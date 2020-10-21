@@ -10,22 +10,28 @@
       platforms.
     </p>
     <div id="icon-row">
-      <div id="icon">
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/fridaychukwuamaka-14622a169"
+        id="icon"
+      >
         <linkedin-icon size="1.5x"></linkedin-icon>
         <p>LinkedIn</p>
-      </div>
-      <div id="icon">
+      </a>
+      <a target="_blank" href="https://github.com/fridaychukwuamaka" id="icon">
         <github-icon size="1.5x"></github-icon>
         <p>GitHub</p>
-      </div>
-      <div id="icon">
+      </a>
+      <a target="_blank" href="https://twitter.com/FridayChukwuam2q" id="icon">
         <twitter-icon size="1.5x"></twitter-icon>
         <p>Twitter</p>
-      </div>
-      <div id="icon">
-        <mail-icon size="1.5x"></mail-icon>
-        <p>Email</p>
-      </div>
+      </a>
+      <form  action="mailto:fridaychukwuamaka@gmail.com?subject= message" method="get"  enctype="text/plain">
+        <button id="icon" class="email-icon">
+          <mail-icon size="1.5x"></mail-icon>
+          <p>Email</p>
+        </button>
+      </form>
     </div>
 
     <div id="footer">Designed & developed by<br />Chukwuamaka Friday</div>
@@ -55,7 +61,7 @@ export default {
   padding: 15px;
   margin-top: 30px;
 }
-#icon-row{
+#icon-row {
   margin-top: 25px;
   display: flex;
   max-width: calc(100vw - 30px);
@@ -66,12 +72,23 @@ export default {
   column-gap: 20px;
   grid-column-gap: 20px;
 }
-#icon{
+.email-icon {
+  background: transparent;
+  border: none;
+  font: unset;
+  padding: 0;
+  outline: none;
+}
+
+a {
+  color: black;
+}
+#icon {
   display: flex;
   align-items: center;
   /* margin-right: 30px; */
 }
-#icon p{
+#icon p {
   margin: 0;
   margin-left: 5px;
 }
@@ -82,7 +99,7 @@ export default {
   font-size: 1.07em;
 }
 #footer {
-  position: relative;
+  /* position: relative; */
   left: 0;
   right: 0;
   bottom: 0;
