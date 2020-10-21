@@ -209,8 +209,12 @@ a {
   margin-bottom: 75px;
 }
 .growed {
-  transition: width 01s ease-in-out;
+  transition: width 01s;
   width: 100% !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 .fade-enter {
