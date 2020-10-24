@@ -3,7 +3,7 @@
     <img id="logo" alt="logo" src="../assets/images/Group 7.png" />
 
     <div id="title">
-      <p>My Work</p>
+      <p>My work</p>
       <div></div>
     </div>
     <div id="row">
@@ -120,7 +120,7 @@ p {
   flex-direction: column;
   /* width: 100%; */
   /* margin-bottom: 69.5px; */
-  margin-top: 75.5px;
+  margin-top: 69.5px;
   padding: 15px;
 }
 #title p {
@@ -199,8 +199,7 @@ p {
 
   #work {
     margin-bottom: 30px;
-    margin-top: 95.5px;
-    /* margin-top: 30px; */
+    margin-top: 30px;
   }
   #row :nth-child(even) #heading {
     /* text-align: right; */

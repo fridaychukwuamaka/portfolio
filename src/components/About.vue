@@ -1,7 +1,5 @@
 <template>
   <div id="page">
-    <img id="logo" alt="logo" src="../assets/images/Group 7.png" />
-
     <div id="title">
       <p>About</p>
       <div></div>
@@ -9,30 +7,39 @@
 
     <div id="about">
       <div id="row">
-        <p id="text">
-          My name is <b> <i>Friday Chukwauamaka Kareen</i></b> I am currently a
-          400 level student studying computer science at Federal University of
-          Petroleum Resources Effurun, Delta State. I love to solve problems.
-          Whether it's finding the most elegant way to write a line of code or
-          figuring out which chord fits best into a progression, I love the
-          challenge of finding a way and discovery solutions. As long as there's
-          a problem to solve or a challenge to puzzle over, it's bound to be
-          something I love!
-        </p>
-        <img
-          id="image"
-          src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
-          alt="pix"
-        />
+        <transition name="slide-home-up" appear>
+          <p id="text">
+            My name is <b> <i>Friday Chukwauamaka Kareen</i></b> I am currently
+            a 400 level student studying computer science at Federal University
+            of Petroleum Resources Effurun, Delta State. I love to solve
+            problems. Whether it's finding the most elegant way to write a line
+            of code or figuring out which chord fits best into a progression, I
+            love the challenge of finding a way and discovery solutions. As long
+            as there's a problem to solve or a challenge to puzzle over, it's
+            bound to be something I love!
+          </p>
+        </transition>
+        <transition name="fade3" appear>
+          <img
+            id="image"
+            src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+            alt="pix"
+          />
+        </transition>
       </div>
-      <div id="spaced"></div>
+      <!-- <div id="spaced"></div> -->
     </div>
+    <!-- <MoreAbout/> -->
   </div>
 </template>
 
 <script>
+import MoreAbout from "./MoreAbout";
 export default {
   name: "About",
+  components: {
+    MoreAbout,
+  },
   props: {
     msg: String,
   },
@@ -40,11 +47,40 @@ export default {
 </script>
 
 <style scoped>
+.slide-home-up-enter {
+  opacity: 0;
+}
+.slide-home-up-enter-active {
+  opacity: 0;
+  animation: slide-home-up-in 1s ease-out 1s forwards;
+  /* transition:  opacity 1s; */
+  /* opacity: 0; */
+  /* opacity: 1 !important; */
+}
+.slide-home-up-leave {
+  /* opacity: 1 !important; */
+}
+.slide-home-up-leave-active {
+  /* animation: slide1-out 1s ease-out forwards; */
+  /* opacity: 1 !important; */
+}
+
+@keyframes slide-home-up-in {
+  from {
+    transform: translateY(150px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 #page {
-  height: 100vh;
+  min-height: calc(100vh - 144.5px);
   display: flex;
   /* width: 100%; */
   flex-direction: column;
+  margin-top: 69.5px;
   /* margin-bottom: 75px; */
 }
 #spaced {
@@ -54,7 +90,7 @@ export default {
 #image {
   height: auto;
   width: 20%;
-  border-radius: 8px;
+  border-radius: 3%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.27);
 }
 #title p {
@@ -66,15 +102,21 @@ export default {
 #title {
   display: flex;
   justify-content: center;
+  align-items: center;
   /*width: 100%*/
   margin: 0;
-  margin-bottom: -5px;
+  margin-top: 15px;
+  margin-bottom: 50px;
   flex-direction: column;
-  display: none;
+
+      width: fit-content;
+    align-self: center;
+
+  /* display: none; */
 }
 #title div {
   height: 1.5px;
-  width: 80px;
+  width: 60px;
   background-color: black;
 }
 #logo {
@@ -84,9 +126,9 @@ export default {
 #about {
   display: flex;
   justify-items: center;
-  padding: 35px;
+  padding: 0 10px 0 35px;
   flex-direction: column;
-  margin: auto;
+  margin: 0;
 }
 #row {
   display: flex;
@@ -101,7 +143,8 @@ export default {
   margin: auto;
   line-height: 35px;
   margin-right: 50px;
-  font-size: 15px;
+  margin-top: 0;
+  font-size: 0.85em;
   font-family: Montserrat-Regular;
   text-align: justify;
 }
@@ -113,6 +156,9 @@ export default {
   #spaced {
     height: 0;
   }
+  #title div {
+  width: 80px;
+}
   #logo {
     margin-left: 0;
     display: none;
@@ -135,7 +181,10 @@ export default {
   }
   #title {
     display: flex;
-    /* align-items: flex-end; */
+    align-items: flex-start;
+    margin-bottom: -5px;
+    width: unset;
+    align-self: unset;
   }
 }
 </style>

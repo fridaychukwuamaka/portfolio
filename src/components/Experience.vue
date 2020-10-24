@@ -1,22 +1,64 @@
 <template>
   <div id="experience">
-    <div id="title">
-      <p>Experience</p>
-      <div></div>
-    </div>
+    <transition name="fade" appear>
+      <div id="title">
+        <p>Experience</p>
+        <div></div>
+      </div>
+    </transition>
+    <transition name="slide1" appear>
+      <div id="view">
+        <div id="tab-bar">
+          <button :class="{ unselected: currentIndex != 0 }" @click="moveTo(0)">
+            HNG Internship
+            <transition name="fade2">
+              <chevron-right-icon
+                v-if="currentIndex == 0"
+                size="1.2x"
+                id="chevron-right-icon"
+              ></chevron-right-icon>
+            </transition>
+          </button>
+          <button :class="{ unselected: currentIndex != 1 }" @click="moveTo(1)">
+            Bincom Dev centre
+            <transition name="fade2">
+              <chevron-right-icon
+                v-if="currentIndex == 1"
+                size="1.2x"
+                id="chevron-right-icon"
+              ></chevron-right-icon>
+            </transition>
+          </button>
+        </div>
+        <div id="tab-view">
+          <template v-for="exp in experience">
+            <transition name="slide">
+              <div v-if="currentIndex == exp.index">
+                <p id="tab-desc">
+                  {{ exp.desc }}
+                </p>
+                <p id="tab-period">{{ exp.period }}</p>
+              </div>
+            </transition>
+          </template>
+        </div>
+      </div>
+    </transition>
     <div id="row">
       <div id="exprnce">
         <p id="place">HNG internship</p>
-        <p
-          id="desc"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet et totam voluptatem</p>
+        <p id="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet
+          et totam voluptatem
+        </p>
         <p id="period">June 2020 - August 2020</p>
       </div>
       <div id="exprnce">
         <p id="place">Bincom ICT solutions</p>
-        <p
-          id="desc"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet et totam voluptatem</p>
+        <p id="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet
+          et totam voluptatem
+        </p>
         <p id="period">July 2019 - November 2019</p>
       </div>
     </div>
@@ -24,8 +66,36 @@
 </template>
 
 <script>
+import { ChevronRightIcon } from "vue-feather-icons";
+
 export default {
   name: "Experience",
+  components: {
+    ChevronRightIcon,
+  },
+  data: () => {
+    return {
+      experience: [
+        {
+          desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet
+          et totam voluptatem`,
+          period: `June 2020 - August 2020`,
+          index: 0,
+        },
+        {
+          desc: `My name is Friday Chukwauamaka Kareen I am currently a 400 level student studying computer science at Federal University of Petroleum Resources Effurun, Delta State.`,
+          period: `June 2020 - August 2020`,
+          index: 1,
+        },
+      ],
+      currentIndex: 0,
+    };
+  },
+  methods: {
+    moveTo(val) {
+      this.currentIndex = val;
+    },
+  },
 };
 </script>
 
@@ -36,8 +106,44 @@ export default {
   flex-direction: column;
   padding: 15px;
 }
+#chevron-right-icon {
+}
+#tab-view {
+  width: 100%;
+}
+.unselected {
+  font-family: Montserrat-Medium !important;
+}
+#view {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-self: center;
+  justify-content: center;
+  
+}
+#tab-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 40px;
+  row-gap: 40px;
+}
+#tab-bar button {
+  background: none;
+  outline: none;
+  border: none;
+  column-gap: 10px;
+  font-family: Montserrat-SemiBold;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
 #row {
   margin: 0 10%;
+  display: none;
 }
 #exprnce {
   margin: 35px 20px;
@@ -60,10 +166,18 @@ export default {
   font-family: Montserrat-Medium;
   font-size: 0.8em;
 }
-#row {
-  display: flex;
-  flex-direction: row;
+#tab-desc {
+  margin: -7px 0 10px 0 !important;
+  line-height: 30px;
+  font-size: 0.85em;
+  font-family: Montserrat-Regular;
+  text-align: justify;
 }
+#tab-period {
+  font-family: Montserrat-Medium;
+  font-size: 0.8em;
+}
+
 #title p {
   margin-top: 0;
   margin-bottom: 5px;
@@ -78,6 +192,76 @@ export default {
   flex-direction: column;
   margin-bottom: 60px;
 }
+
+.slide-enter {
+}
+.slide-enter-active {
+  animation: slide-in 1s ease-in forwards;
+  
+}
+.slide-leave {
+}
+.slide-leave-active {
+  animation: slide-out 1s ease-out forwards;
+  display: none;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(80px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(80px);
+  }
+}
+.slide1-enter {
+  opacity: 0;
+}
+.slide1-enter-active {
+  opacity: 0;
+  animation: slide1-in 1s ease-out 1s forwards;
+  /* transition:  opacity 1s; */
+  /* opacity: 0; */
+  /* opacity: 1 !important; */
+}
+.slide1-leave {
+  /* opacity: 1 !important; */
+}
+.slide1-leave-active {
+  /* animation: slide1-out 1s ease-out forwards; */
+  /* opacity: 1 !important; */
+}
+
+@keyframes slide1-in {
+  from {
+    transform: translate(80px);
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+    
+
+  }
+}
+
+/*
+@keyframes slide1-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(80px);
+    opacity: 1;
+  }
+} */
 
 #title div {
   height: 1.5px;
@@ -94,6 +278,9 @@ export default {
     margin: 0;
     flex-direction: column;
     margin-bottom: 35px;
+  }
+  #view {
+    display: none;
   }
   #experience {
     margin-top: 0;

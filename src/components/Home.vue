@@ -51,15 +51,19 @@
         </div>
       </div>
     </transition>
-    <transition name="slide" appear >
-      <div class="title">
-        <div id="hello">
+    <div class="title">
+      <div id="hello">
+        <transition name="fade" appear>
           <p id="first">Hello,</p>
+        </transition>
+        <transition name="slide-home-side" appear>
           <p id="second">I'm Chukwuamaka Friday</p>
-        </div>
-        <p id="story">I am a full-stack web developer and a mobile developer</p>
+        </transition>
       </div>
-    </transition>
+      <transition name="slide-home-up" appear>
+        <p id="story">I am a full-stack web developer and a mobile developer</p>
+      </transition>
+    </div>
     <div style="height: 75px"></div>
   </div>
 </template>
@@ -113,6 +117,60 @@ export default {
 #download a {
   margin: 0 !important;
   padding: 10px;
+}
+.slide-home-side-enter {
+  opacity: 0;
+}
+.slide-home-side-enter-active {
+  opacity: 0;
+  animation: slide-home-side-in 1s ease-out 1s forwards;
+  /* transition:  opacity 1s; */
+  /* opacity: 0; */
+  /* opacity: 1 !important; */
+}
+.slide-home-side-leave {
+  /* opacity: 1 !important; */
+}
+.slide-home-side-leave-active {
+  /* animation: slide1-out 1s ease-out forwards; */
+  /* opacity: 1 !important; */
+}
+
+@keyframes slide-home-side-in {
+  from {
+    transform: translate(80px);
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.slide-home-up-enter {
+  opacity: 0;
+}
+.slide-home-up-enter-active {
+  opacity: 0;
+  animation: slide-home-up-in 1s ease-out 1s forwards;
+  /* transition:  opacity 1s; */
+  /* opacity: 0; */
+  /* opacity: 1 !important; */
+}
+.slide-home-up-leave {
+  /* opacity: 1 !important; */
+}
+.slide-home-up-leave-active {
+  /* animation: slide1-out 1s ease-out forwards; */
+  /* opacity: 1 !important; */
+}
+
+@keyframes slide-home-up-in {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 #cover {
   height: calc(100vh - 144.5px);
