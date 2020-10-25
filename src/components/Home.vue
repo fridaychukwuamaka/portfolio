@@ -124,9 +124,13 @@ export default {
 .slide-home-side-enter-active {
   opacity: 0;
   animation: slide-home-side-in 1s ease-out 1s forwards;
+  position: inherit;
   /* transition:  opacity 1s; */
   /* opacity: 0; */
   /* opacity: 1 !important; */
+}
+.slide-home-side-move{
+  transition: all;
 }
 .slide-home-side-leave {
   /* opacity: 1 !important; */
@@ -138,10 +142,10 @@ export default {
 
 @keyframes slide-home-side-in {
   from {
-    transform: translate(80px);
+    transform: translateX(80px);
   }
   to {
-    transform: translate(0);
+    transform: translateX(0px);
     opacity: 1;
   }
 }

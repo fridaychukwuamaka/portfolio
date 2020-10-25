@@ -132,7 +132,7 @@ export default {
 }
 #row {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 @font-face {
   font-family: Montserrat-Medium;
@@ -170,6 +170,7 @@ export default {
   #row {
     flex-direction: column;
     padding: 0;
+    align-items: center;
   }
   #text {
     margin: 0;

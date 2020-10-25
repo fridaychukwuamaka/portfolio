@@ -5,9 +5,10 @@
       <menu-icon id="menu-icon" @click="menu = !menu"></menu-icon>
     </div>
 
-    <transition name="fade">
+    <transition name="drawer-open" animation="transition">
       <div v-show="menu" id="menu-open">
         <div @click="menu = !menu" id="shadowed"></div>
+
         <div id="none-shadow">
           <arrow-left-icon id="back" @click="menu = !menu"></arrow-left-icon>
           <ul>
@@ -58,9 +59,9 @@
 import { MenuIcon, ArrowLeftIcon } from "vue-feather-icons";
 export default {
   name: "Header",
-  components:{
-    MenuIcon, 
-    ArrowLeftIcon
+  components: {
+    MenuIcon,
+    ArrowLeftIcon,
   },
   data: () => {
     return {
@@ -82,6 +83,7 @@ export default {
 <style scoped>
 #header {
   position: fixed;
+  width: calc(100vw - 30px);
   top: 0;
   left: 0;
   right: 0;
@@ -108,21 +110,22 @@ export default {
     /* width: 100%; */
     /* display: flex; */
   }
-  
+
   .heading {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+
   #menu-icon {
-  display: block;
+    display: block;
     margin: 0;
     height: fit-content;
     font-family: Montserrat-medium;
     cursor: pointer;
     height: unset;
-}
+  }
   .heading p {
     display: block;
     margin: 0;
@@ -244,6 +247,42 @@ export default {
   .fade-leave-active {
     transition: opacity 0.5s ease-out;
     opacity: 0;
+    
+  }
+
+  .drawer-open-enter {
+    background-color: transparent !important;
+  }
+  .drawer-open-enter-active {
+    animation: drawer-in 0.6s ease-in-out forwards;
+    background-color: transparent !important;
+    transition: background-color 0.6s ease-in-out ;
+    /* background-color: rgba(0, 0, 0, 0.47) !important; */
+  }
+  .drawer-open-leave {
+    background-color: transparent;
+  }
+  .drawer-open-leave-active {
+    animation: drawer-out 0.6s ease-in-out forwards;
+    background-color: transparent !important;
+  }
+
+  @keyframes drawer-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+
+    }
+  }
+  @keyframes drawer-out {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
   }
 }
 </style>

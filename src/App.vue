@@ -26,9 +26,9 @@
         <div id="experience">
           <Experience />
         </div>
-        <div id="contact">
+        <!-- <div id="contact">
           <Contact />
-        </div>
+        </div> -->
       </div>
 
       <div id="menu">
