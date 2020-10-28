@@ -1,62 +1,82 @@
 <template>
   <div id="work">
-    <img id="logo" alt="logo" src="../assets/images/Group 7.png" />
-
     <div id="title">
-      <p>My Work</p>
+      <p>My work</p>
       <div></div>
     </div>
-    <div id="row">
-      <div id="project">
-        <img
-          id="image"
-          src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
-          alt="pix"
-        />
-        <p id="heading">Lorem ipsum</p>
-        <p id="detail">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit sunt
-          mollitia doloremque non fuga rem facilis praesentium ab qui assumenda.
-          Voluptatibus officiis laborum obcaecati cum ad neque consequuntur
-          libero incidunt!
-        </p>
+    <transition name="fade3" appear>
+      <div id="projects">
+        <div id="project">
+          <div id="image"></div>
+          <img src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" id="imagex" alt="">
+          <div id="writtings">
+            <div id="heading">
+              Lorem ipsum dolor sit amet
+            </div>
+            <div id="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis numquam maiores libero ratione officia! Sit quisquam
+              reprehenderit facere. Reiciendis odit cupiditate ipsam dolores ab
+              ullam harum illo optio dolorem? Adipisci.
+            </div>
+            <a href="/" id="link"
+              ><p>View project</p>
+              <Chevron-right-icon size="1.2x"></Chevron-right-icon
+            ></a>
+          </div>
+        </div>
+        <div id="project">
+          <div id="image"></div>
+          <img src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" id="imagex" alt="">
+          <div id="writtings">
+            <div id="heading">
+              Lorem ipsum dolor sit amet
+            </div>
+            <div id="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis numquam maiores libero ratione officia! Sit quisquam
+              reprehenderit facere. Reiciendis odit cupiditate ipsam dolores ab
+              ullam harum illo optio dolorem? Adipisci.
+            </div>
+            <a href="/" id="link"
+              ><p>View project</p>
+              <Chevron-right-icon size="1.2x"></Chevron-right-icon
+            ></a>
+          </div>
+        </div>
+        <div id="project">
+            <div id="image"></div>
+          <img src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" id="imagex" alt="">
+          <div id="writtings">
+            <div id="heading">
+              Lorem ipsum dolor sit amet
+            </div>
+            <div id="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis numquam maiores libero ratione officia! Sit quisquam
+              reprehenderit facere. Reiciendis odit cupiditate ipsam dolores ab
+              ullam harum illo optio dolorem? Adipisci.
+            </div>
+            <a href="/" id="link"
+              ><p>View project</p>
+              <Chevron-right-icon size="1.2x"></Chevron-right-icon
+            ></a>
+          </div>
+        </div>
       </div>
-
-      <div id="project">
-        <img
-          id="image"
-          src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
-          alt="pix"
-        />
-        <p id="heading">Lorem ipsum</p>
-        <p id="detail">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit sunt
-          mollitia doloremque non fuga rem facilis praesentium ab qui assumenda.
-          Voluptatibus officiis laborum obcaecati cum ad neque consequuntur
-          libero incidunt!
-        </p>
-      </div>
-      <div id="project">
-        <img
-          id="image"
-          src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
-          alt="pix"
-        />
-        <p id="heading">Lorem ipsum</p>
-        <p id="detail">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit sunt
-          mollitia doloremque non fuga rem facilis praesentium ab qui assumenda.
-          Voluptatibus officiis laborum obcaecati cum ad neque consequuntur
-          libero incidunt!
-        </p>
-      </div>
-    </div>
+    </transition>
   </div>
 </template>
 
 <script>
+import { ArrowRightIcon, ChevronRightIcon } from "vue-feather-icons";
+
 export default {
   name: "Worrk",
+  components: {
+    ArrowRightIcon,
+    ChevronRightIcon,
+  },
 };
 </script>
 
@@ -64,83 +84,108 @@ export default {
 p {
   margin: 0;
 }
-#project {
-  /*width: 100%*/
-  /* padding: 10px; */
+
+#image {
+  background: url("../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg");
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1000px;
+
+  flex: none;
 }
-#heading {
-  font-family: Montserrat-SemiBold;
-  margin-bottom: 5px;
-  font-size: 1.15em;
+#projects {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin: 0 10%;
 }
-#detail {
-  font-family: Montserrat-Medium;
-  text-align: justify;
-  font-size: 1em;
-  line-height: 30px;
+
+#imagex{
+  display: none;
 }
+
 #work {
   display: flex;
   flex-direction: column;
-  /*width: 100%*/
-  /* margin-bottom: 75px; */
-  margin-top: 30px;
+  /* width: 100%; */
+  /* margin-bottom: 69.5px; */
+  margin-top: 69.5px;
   padding: 15px;
 }
+#writtings {
+  width: 100%;
+}
+#project {
+  display: flex;
+  column-gap: 35px;
+  align-items: center;
+}
+#projects :nth-child(even) {
+  flex-direction: row-reverse;
+}
+#link {
+  margin-top: 10px;
+  display: flex;
+  color: black;
+  justify-content: flex-start;
+  align-items: center;
+}
+#link p {
+  font-family: Montserrat-Medium;
+  font-size: 0.8em;
+}
+#heading {
+  margin-bottom: 10px;
+  font-family: Montserrat-Semibold;
+  font-size: 1.13em;
+}
+#subtitle {
+  font-size: 0.85em;
+  line-height: 30px;
+  text-align: justify;
+}
+
 #title p {
   margin-top: 0;
   margin-bottom: 5px;
-  font-size: 1.07em;
+  font-size: 1em;
   font-family: Montserrat-SemiBold;
 }
+
 #title {
   display: flex;
   align-items: center;
   /*width: 100%*/
   margin: 0;
   flex-direction: column;
+  margin-bottom: 50px;
 }
+
 #title div {
   height: 1.5px;
   width: 80px;
   background-color: black;
 }
-#logo {
-  display: none;
-}
-#image {
-  height: auto;
-  /*width: 100%*/
-  border-radius: 6px;
-  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.27);
-  margin-bottom: 10px;
-}
-@font-face {
-  font-family: Montserrat-SemiBold;
-  src: url(../assets/icon/Montserrat/Montserrat-SemiBold.ttf);
-}
-@font-face {
-  font-family: Montserrat-Medium;
-  src: url(../assets/icon/Montserrat/Montserrat-Medium.ttf);
-}
+
 @media only screen and (max-width: 760px) {
-  #logo {
+  #project {
+    flex-direction: column !important;
+    row-gap: 25px;
+    align-items: flex-start;
+  }
+  #projects {
+    margin: 0;
+  }
+  #image{
     display: none;
   }
-  #row {
-    margin-top: 45px;
-    flex-wrap: wrap-reverse;
+  #imagex{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
-  #title {
-    align-items: flex-end;
-  }
-}
-
-#row {
-  display: flex;
-  column-gap: 15px;
-  row-gap: 30px;
-  margin-top: 45px;
-  /* flex-wrap: wrap-reverse; */
 }
 </style>

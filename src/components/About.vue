@@ -92,6 +92,20 @@ export default {
   width: 20%;
   border-radius: 3%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.27);
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+#image:hover {
+  animation: flip  ease-in-out 14s forwards;
+  /* transform: rotateY(0deg); */
+}
+@keyframes flip {
+  from {
+    transform: rotateY(-180deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
 }
 #title p {
   margin-top: 0;
@@ -109,8 +123,8 @@ export default {
   margin-bottom: 50px;
   flex-direction: column;
 
-      width: fit-content;
-    align-self: center;
+  width: fit-content;
+  align-self: center;
 
   /* display: none; */
 }
@@ -157,8 +171,8 @@ export default {
     height: 0;
   }
   #title div {
-  width: 80px;
-}
+    width: 80px;
+  }
   #logo {
     margin-left: 0;
     display: none;

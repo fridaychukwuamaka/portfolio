@@ -13,8 +13,6 @@
         <router-view> </router-view>
       </div>
 
-     
-
       <div id="mobile">
         <Home />
         <div id="about">
@@ -64,19 +62,22 @@
             </li>
           </router-link>
         </ul>
+        <div id="downld-cv">
+          <a href="" download>Download cv</a>
+        </div>
       </div>
-       <div id="side-bar">
+      <div id="side-bar">
         <SideBar />
       </div>
       <transition name="fade" appear>
-      <div id="to-top">
-        <a href="#mobile"
-          ><chevron-up-icon
-            class="chevron-up-icon"
-            size="1.5x"
-          ></chevron-up-icon
-        ></a>
-      </div>
+        <div id="to-top">
+          <a href="#mobile"
+            ><chevron-up-icon
+              class="chevron-up-icon"
+              size="1.5x"
+            ></chevron-up-icon
+          ></a>
+        </div>
       </transition>
     </div>
   </div>
@@ -86,6 +87,7 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Home from "./components/Home";
 import About from "./components/About";
+import Worrk from "./components/Worrk";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
@@ -105,6 +107,7 @@ export default {
     About,
     MoreAbout,
     Work,
+    Worrk,
     Experience,
     ChevronUpIcon,
     Contact,
@@ -147,8 +150,19 @@ export default {
   min-height: 100vh;
   flex-direction: column;
 }
+#downld-cv {
+  margin-right: 55px;
+  cursor: pointer;
+}
+#downld-cv a {
+  border: solid 1.5px;
+  font-family: "Montserrat-Medium";
+  padding: 10px;
+  font-size: 0.88em;
+}
 a {
   -webkit-tap-highlight-color: transparent;
+  color: black;
 }
 button {
   -webkit-tap-highlight-color: transparent;
@@ -159,7 +173,7 @@ p:active {
 #to-top {
   display: none;
 }
-#title p{
+#title p {
   font-size: 1em !important;
 }
 
@@ -171,6 +185,7 @@ p:active {
   position: fixed;
   bottom: 0;
   width: 100%;
+  justify-content: space-between;
 }
 #mobile {
   display: none;
@@ -230,14 +245,14 @@ a {
   /* top: 30px;
   left: 30px; */
 }
-#side-bar{
+#side-bar {
   position: fixed;
-    /* background: red; */
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 55px;
-    display: flex;
+  /* background: red; */
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 55px;
+  display: flex;
 }
 #others {
   margin-bottom: 75px;
@@ -304,7 +319,7 @@ a {
   src: url(assets/icon/Montserrat/Montserrat-SemiBold.ttf);
 }
 @media only screen and (max-width: 760px) {
-  #app{
+  #app {
     margin-right: 0;
   }
   #menu {
