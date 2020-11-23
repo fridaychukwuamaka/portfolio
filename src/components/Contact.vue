@@ -22,7 +22,7 @@
         <github-icon size="1.5x"></github-icon>
         <p>GitHub</p>
       </a>
-      <a target="_blank" href="https://twitter.com/FridayChukwuam2q" id="icon">
+      <a target="_blank" href="https://twitter.com/FridayChukwuam2" id="icon">
         <twitter-icon size="1.5x"></twitter-icon>
         <p>Twitter</p>
       </a>
