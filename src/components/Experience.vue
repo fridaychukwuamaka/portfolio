@@ -32,11 +32,13 @@
         </div>
         <div id="tab-view">
           <template v-for="exp in experience">
-            <transition name="slide">
+            <transition name="slide" :key="exp.index">
               <div v-if="currentIndex == exp.index">
-                <p id="tab-desc">
-                  {{ exp.desc }}
-                </p>
+                <ol>
+                  <li v-for="desc in exp.desc" :key="desc" id="tab-desc">
+                    {{ desc }}
+                  </li>
+                </ol>
                 <p id="tab-period">{{ exp.period }}</p>
               </div>
             </transition>
@@ -44,22 +46,19 @@
         </div>
       </div>
     </transition>
-    <div id="row">
+    <div id="row" v-for="exp in experience" :key="exp.index">
       <div id="exprnce">
-        <p id="place">HNG internship</p>
-        <p id="desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet
-          et totam voluptatem
-        </p>
-        <p id="period">June 2020 - August 2020</p>
-      </div>
-      <div id="exprnce">
-        <p id="place">Bincom ICT solutions</p>
-        <p id="desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet
-          et totam voluptatem
-        </p>
-        <p id="period">July 2019 - November 2019</p>
+        <p id="place">{{ exp.placement }}</p>
+        <!-- <p id="desc">
+          {{ exp.desc }}
+          
+        </p> -->
+        <ol>
+          <li id="desc" v-for="desc in exp.desc" :key="desc">
+            {{ desc }}
+          </li>
+        </ol>
+        <p id="period">{{ exp.period }}</p>
       </div>
     </div>
   </div>
@@ -77,14 +76,26 @@ export default {
     return {
       experience: [
         {
-          desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet
-          et totam voluptatem`,
+          placement: `HNG Internship`,
+          desc: [
+            `Cooperate with designers to create clean interfaces and
+simple, intuitive interactions and experiences.`,
+            `Carry out quality assurance tests to discover errors and
+optimize usability`,
+          ],
           period: `June 2020 - August 2020`,
           index: 0,
         },
         {
-          desc: `My name is Friday Chukwauamaka Kareen I am currently a 400 level student studying computer science at Federal University of Petroleum Resources Effurun, Delta State.`,
-          period: `June 2020 - August 2020`,
+          placement: `Bincom Dev Centre`,
+          desc: [
+            `I worked as a frontend web
+developer, I also contributed to a Bincom product Social Lender.`,
+            `Managed social lender mobile app on playstore.`,
+            `Carry out quality assurance tests to discover errors and
+optimize usability`,
+          ],
+          period: `June 2019 - November 2019`,
           index: 1,
         },
       ],
@@ -120,7 +131,13 @@ export default {
   width: 80%;
   align-self: center;
   justify-content: center;
-  
+}
+ol {
+  margin: 0;
+  padding: 0;
+}
+li::marker {
+  font-family: Montserrat-Medium;
 }
 #tab-bar {
   display: flex;
@@ -197,7 +214,6 @@ export default {
 }
 .slide-enter-active {
   animation: slide-in 1s ease-in forwards;
-  
 }
 .slide-leave {
 }
@@ -247,8 +263,6 @@ export default {
   to {
     transform: translate(0);
     opacity: 1;
-    
-
   }
 }
 
@@ -278,6 +292,9 @@ export default {
     margin: 0;
     flex-direction: column;
     margin-bottom: 35px;
+  }
+  ol {
+    padding-left: 20px;
   }
   #view {
     display: none;

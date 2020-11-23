@@ -15,7 +15,7 @@
 
       <div id="mobile">
         <Home />
-        <div id="about">
+        <div id="page">
           <About />
         </div>
         <div id="work">

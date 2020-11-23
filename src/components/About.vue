@@ -22,7 +22,7 @@
         <transition name="fade3" appear>
           <img
             id="image"
-            src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+            src="../assets/images/IMG_20200810_170143564~3.jpg"
             alt="pix"
           />
         </transition>
@@ -90,13 +90,13 @@ export default {
 #image {
   height: auto;
   width: 20%;
-  border-radius: 3%;
+  border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.27);
   cursor: pointer;
-  transform: rotateY(180deg);
+  /* transform: rotateY(180deg); */
 }
 #image:hover {
-  animation: flip  ease-in-out 14s forwards;
+  /* animation: flip  ease-in-out 14s forwards; */
   /* transform: rotateY(0deg); */
 }
 @keyframes flip {

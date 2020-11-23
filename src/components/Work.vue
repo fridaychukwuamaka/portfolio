@@ -4,7 +4,7 @@
       <p>My work</p>
       <div></div>
     </div>
-    <transition name="fade3" appear>
+    <transition name="fade6" appear>
       <div id="projects">
         <div id="project">
           <div id="image"></div>
@@ -106,6 +106,19 @@ p {
   display: none;
 }
 
+.fade6-enter {
+  opacity: 0;
+}
+.fade6-enter-active {
+  transition: opacity 2s ease-in;
+}
+.fade6-leave {
+}
+.fade6-leave-active {
+  transition: opacity 2s ease-in-out;
+  opacity: 0;
+  display: none;
+}
 #work {
   display: flex;
   flex-direction: column;
@@ -180,6 +193,9 @@ p {
   }
   #image{
     display: none;
+  }
+  #title{
+    align-items: flex-start;
   }
   #imagex{
     display: block;
