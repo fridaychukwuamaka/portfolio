@@ -19,7 +19,7 @@
         <mail-icon size="1.2x"></mail-icon>
       </button>
     </form>
-    <a target="_blank" href="https://twitter.com/FridayChukwuam2q" id="icon">
+    <a target="_blank" href="https://twitter.com/FridayChukwuam2" id="icon">
       <twitter-icon size="1.2x"></twitter-icon>
     </a>
   </div>
