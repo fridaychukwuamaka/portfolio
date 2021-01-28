@@ -98,6 +98,18 @@ optimize usability`,
           period: `June 2019 - November 2019`,
           index: 1,
         },
+        {
+          placement: `Bincom Dev Centre`,
+          desc: [
+            `I worked as a frontend web
+developer, I also contributed to a Bincom product Social Lender.`,
+            `Managed social lender mobile app on playstore.`,
+            `Carry out quality assurance tests to discover errors and
+optimize usability`,
+          ],
+          period: `June 2019 - November 2019`,
+          index: 1,
+        },
       ],
       currentIndex: 0,
     };
