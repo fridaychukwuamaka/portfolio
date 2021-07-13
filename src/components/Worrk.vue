@@ -1,7 +1,7 @@
 <template>
   <div id="work">
     <div id="title">
-      <p>My work</p>
+      <p>My project</p>
       <div></div>
     </div>
     <transition name="fade3" appear>

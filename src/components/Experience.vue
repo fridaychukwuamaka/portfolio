@@ -10,7 +10,7 @@
       <div id="view">
         <div id="tab-bar">
           <button :class="{ unselected: currentIndex != 0 }" @click="moveTo(0)">
-            HNG Internship
+            Freelance
             <transition name="fade2">
               <chevron-right-icon
                 v-if="currentIndex == 0"
@@ -20,10 +20,20 @@
             </transition>
           </button>
           <button :class="{ unselected: currentIndex != 1 }" @click="moveTo(1)">
-            Bincom Dev centre
+            HNG Internship
             <transition name="fade2">
               <chevron-right-icon
                 v-if="currentIndex == 1"
+                size="1.2x"
+                id="chevron-right-icon"
+              ></chevron-right-icon>
+            </transition>
+          </button>
+          <button :class="{ unselected: currentIndex != 2 }" @click="moveTo(2)">
+            Bincom Dev centre
+            <transition name="fade2">
+              <chevron-right-icon
+                v-if="currentIndex == 2"
                 size="1.2x"
                 id="chevron-right-icon"
               ></chevron-right-icon>
@@ -34,6 +44,7 @@
           <template v-for="exp in experience">
             <transition name="slide" :key="exp.index">
               <div v-if="currentIndex == exp.index">
+                <p id="tab-role">{{ exp.role }}</p>
                 <ol>
                   <li v-for="desc in exp.desc" :key="desc" id="tab-desc">
                     {{ desc }}
@@ -48,11 +59,12 @@
     </transition>
     <div id="row" v-for="exp in experience" :key="exp.index">
       <div id="exprnce">
-        <p id="place">{{ exp.placement }}</p>
+        <p id="place">{{ exp.placement }} - {{ exp.role }}</p>
         <!-- <p id="desc">
           {{ exp.desc }}
           
         </p> -->
+
         <ol>
           <li id="desc" v-for="desc in exp.desc" :key="desc">
             {{ desc }}
@@ -76,7 +88,15 @@ export default {
     return {
       experience: [
         {
+          placement: `Freelance`,
+          role: "Mobile Developer",
+          desc: [``],
+          period: `November 2020 - Present`,
+          index: 0,
+        },
+        {
           placement: `HNG Internship`,
+          role: "Mobile Developer",
           desc: [
             `Cooperate with designers to create clean interfaces and
 simple, intuitive interactions and experiences.`,
@@ -84,19 +104,20 @@ simple, intuitive interactions and experiences.`,
 optimize usability`,
           ],
           period: `June 2020 - August 2020`,
-          index: 0,
+          index: 1,
         },
         {
           placement: `Bincom Dev Centre`,
+          role: "Frontend Developer",
           desc: [
-            `I worked as a frontend web
+            `Worked as a frontend web
 developer, I also contributed to a Bincom product Social Lender.`,
             `Managed social lender mobile app on playstore.`,
             `Carry out quality assurance tests to discover errors and
 optimize usability`,
           ],
           period: `June 2019 - November 2019`,
-          index: 1,
+          index: 2,
         },
       ],
       currentIndex: 0,
@@ -132,12 +153,10 @@ optimize usability`,
   align-self: center;
   justify-content: center;
 }
-ol {
-  margin: 0;
-  padding: 0;
-}
+
 li::marker {
-  font-family: Montserrat-Medium;
+  font-family: "Montserrat-SemiBold";
+  font-size: 0.8em;
 }
 #tab-bar {
   display: flex;
@@ -185,13 +204,18 @@ li::marker {
 }
 #tab-desc {
   margin: -7px 0 10px 0 !important;
-  line-height: 30px;
-  font-size: 0.85em;
+  line-height: 24px;
+  font-size: 0.82em;
   font-family: Montserrat-Regular;
   text-align: justify;
 }
 #tab-period {
   font-family: Montserrat-Medium;
+  font-size: 0.8em;
+}
+#tab-role {
+  font-family: Montserrat-Medium;
+  margin-top: 0;
   font-size: 0.8em;
 }
 
@@ -276,6 +300,9 @@ li::marker {
     opacity: 1;
   }
 } */
+ol {
+    padding-left: 15px;
+  }
 
 #title div {
   height: 1.5px;
@@ -293,14 +320,12 @@ li::marker {
     flex-direction: column;
     margin-bottom: 35px;
   }
-  ol {
-    padding-left: 20px;
-  }
+  
   #view {
     display: none;
   }
   #experience {
-    margin-top: 0;
+    margin-top: 20;
   }
   #row {
     display: flex;

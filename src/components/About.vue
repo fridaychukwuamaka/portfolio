@@ -8,21 +8,32 @@
     <div id="about">
       <div id="row">
         <transition name="slide-home-up" appear>
-          <p id="text">
-            My name is <b> <i>Friday Chukwauamaka Kareen</i></b> I am currently
-            a 400 level student studying computer science at Federal University
-            of Petroleum Resources Effurun, Delta State. I love to solve
-            problems. Whether it's finding the most elegant way to write a line
-            of code or figuring out which chord fits best into a progression, I
-            love the challenge of finding a way and discovery solutions. As long
-            as there's a problem to solve or a challenge to puzzle over, it's
-            bound to be something I love!
-          </p>
+          <div>
+            <p id="text">
+              My name is <b> <i>Friday Chukwauamaka Kareen</i></b> I am
+              currently a 400 level student studying computer science at Federal
+              University of Petroleum Resources Effurun, Delta State. I love to
+              solve problems. Whether it's finding the most elegant way to write
+              a line of code or figuring out which chord fits best into a
+              progression, I love the challenge of finding a way and discovery
+              solutions. As long as there's a problem to solve or a challenge to
+              puzzle over, it's bound to be something I love!
+            </p>
+            <p id="text">
+              Here are a few technologies I've been working with recently:
+            </p>
+            <ul class="skills-list">
+              <li>Flutter</li>
+              <li>React</li>
+              <li>Vue</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
         </transition>
         <transition name="fade3" appear>
           <img
             id="image"
-            src="../assets/images/IMG_20200810_170143564~3.jpg"
+            src="../assets/images/IMG_20200810_170143564~3.png"
             alt="pix"
           />
         </transition>
@@ -65,6 +76,16 @@ export default {
   /* opacity: 1 !important; */
 }
 
+ul.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 160px));
+  gap: 0px 10px;
+  font-size: 0.85em;
+  line-height: 25px;
+  padding-left: 10px;
+  margin: 20px 0px 0px;
+}
+
 @keyframes slide-home-up-in {
   from {
     transform: translateY(150px);
@@ -88,9 +109,9 @@ export default {
   /*width: 100%*/
 }
 #image {
-  height: auto;
-  width: 20%;
-  border-radius: 10px;
+  width: auto;
+  height: calc(26vw);
+  border-radius: 5px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.27);
   cursor: pointer;
   /* transform: rotateY(180deg); */

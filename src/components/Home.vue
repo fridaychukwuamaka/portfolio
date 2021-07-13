@@ -26,7 +26,7 @@
             </a>
             <a :href="'#work'">
               <li @click="toggle(2)">
-                <a>My work</a>
+                <a>My project</a>
                 <div :class="{ selected: selectMenu == 2 }"></div>
               </li>
             </a>

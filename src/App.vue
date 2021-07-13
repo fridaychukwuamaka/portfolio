@@ -47,7 +47,7 @@
           </router-link>
           <router-link to="/work" class="route">
             <li @click="activeLink(2)">
-              <p>My work</p>
+              <p>My project</p>
               <div
                 :class="{ growed: link == 2 || currentRoute == '/work' }"
               ></div>
@@ -263,7 +263,8 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0;
+ 
 }
 
 .fade-enter {

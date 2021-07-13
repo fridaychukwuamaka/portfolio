@@ -27,7 +27,7 @@
             </a>
             <a :href="'#work'">
               <li @click="toggle(2)">
-                <a>My work</a>
+                <a>My project</a>
                 <div :class="{ selected: selectMenu == 2 }"></div>
               </li>
             </a>
@@ -83,7 +83,9 @@ export default {
 <style scoped>
 #header {
   position: fixed;
+  z-index: 11;
   width: calc(100vw - 30px);
+   
   top: 0;
   left: 0;
   right: 0;
@@ -247,7 +249,6 @@ export default {
   .fade-leave-active {
     transition: opacity 0.5s ease-out;
     opacity: 0;
-    
   }
 
   .drawer-open-enter {
@@ -256,7 +257,7 @@ export default {
   .drawer-open-enter-active {
     animation: drawer-in 0.6s ease-in-out forwards;
     background-color: transparent !important;
-    transition: background-color 0.6s ease-in-out ;
+    transition: background-color 0.6s ease-in-out;
     /* background-color: rgba(0, 0, 0, 0.47) !important; */
   }
   .drawer-open-leave {
@@ -273,7 +274,6 @@ export default {
     }
     to {
       transform: translateX(0);
-
     }
   }
   @keyframes drawer-out {
