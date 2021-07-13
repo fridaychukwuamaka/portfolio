@@ -90,7 +90,8 @@ export default {
         {
           placement: `Freelance`,
           role: "Mobile Developer",
-          desc: [``],
+          desc: [`Cooperate with designers to create clean interfaces and
+simple, intuitive interactions and experiences using Flutter.`, 'Integrated google maps to a client application'],
           period: `November 2020 - Present`,
           index: 0,
         },
@@ -99,7 +100,7 @@ export default {
           role: "Mobile Developer",
           desc: [
             `Cooperate with designers to create clean interfaces and
-simple, intuitive interactions and experiences.`,
+simple, intuitive interactions and experiences using Flutter.`,
             `Carry out quality assurance tests to discover errors and
 optimize usability`,
           ],
@@ -111,7 +112,8 @@ optimize usability`,
           role: "Frontend Developer",
           desc: [
             `Worked as a frontend web
-developer, I also contributed to a Bincom product Social Lender.`,
+developer, contributed to a Bincom product Social Lender using Angular framework.`,
+'Integrated repayent option on Social lender: Paytack and Flutterwave',
             `Managed social lender mobile app on playstore.`,
             `Carry out quality assurance tests to discover errors and
 optimize usability`,

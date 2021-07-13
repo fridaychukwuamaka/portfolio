@@ -45,7 +45,7 @@
             </a>
             <a href="../assets/docs/cv.pdf" download>
               <li id="download">
-                <a>Download cv</a>
+                <a>Resume</a>
               </li>
             </a>
           </ul>

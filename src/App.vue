@@ -63,7 +63,7 @@
           </router-link>
         </ul>
         <div id="downld-cv">
-          <a href="" download>Download cv</a>
+          <a href="" download>Resume</a>
         </div>
       </div>
       <div id="side-bar">
@@ -263,7 +263,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+  width: 10px;
  
 }
 

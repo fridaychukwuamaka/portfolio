@@ -10,9 +10,9 @@
         <transition name="slide-home-up" appear>
           <div>
             <p id="text">
-              My name is <b> <i>Friday Chukwauamaka Kareen</i></b> I am
+              My name is <b> Friday Chukwauamaka Kareen</b> I am
               currently a 400 level student studying computer science at Federal
-              University of Petroleum Resources Effurun, Delta State. I love to
+              University of Petroleum Resources Effurun, Delta State, Nigeria. I love to
               solve problems. Whether it's finding the most elegant way to write
               a line of code or figuring out which chord fits best into a
               progression, I love the challenge of finding a way and discovery
@@ -24,8 +24,8 @@
             </p>
             <ul class="skills-list">
               <li>Flutter</li>
-              <li>React</li>
               <li>Vue</li>
+              <li>Firebase</li>
               <li>Node.js</li>
             </ul>
           </div>
@@ -76,14 +76,15 @@ export default {
   /* opacity: 1 !important; */
 }
 
+
 ul.skills-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 160px));
+  list-style-type: none;
+  display: flex;
   gap: 0px 10px;
-  font-size: 0.85em;
-  line-height: 25px;
-  padding-left: 10px;
-  margin: 20px 0px 0px;
+  font-weight: 600;
+  font-size: 0.8em;
+  padding-left: 0px;
+  margin: 10px 0px 0px;
 }
 
 @keyframes slide-home-up-in {

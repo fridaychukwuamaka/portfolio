@@ -126,7 +126,7 @@ p {
   width: 100%;
   height: calc((100vw / 3) * 0.83);
   background-position: center;
-  filter: brightness(0.6);
+  filter: brightness(0.5);
   background-size: cover;
   border-radius: 5px;
   flex: 2;
@@ -260,7 +260,7 @@ p {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    filter: brightness(0.6);
+    filter: brightness(0.5);
   }
 }
 </style>
