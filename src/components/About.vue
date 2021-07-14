@@ -210,8 +210,12 @@ ul.skills-list {
   }
   #text {
     margin: 0;
-    margin-bottom: 50px;
   }
+
+  .skills-list{
+    margin-bottom: 50px !important;
+  }
+
   #image {
     width: 75%;
     height: auto;
