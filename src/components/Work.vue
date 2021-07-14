@@ -1,7 +1,7 @@
 <template>
   <div id="work">
     <div id="title">
-      <p>My project</p>
+      <p>My projects</p>
       <div></div>
     </div>
     <transition name="fade6" appear>
@@ -79,7 +79,8 @@ export default {
           title: "Deigit",
           detail:
             "Degeit is a mobile application that helps merchants to generate digital copies of receipt for every transaction made. It is specially made for merchants who sell online (Instagram, Facebook, Twitter, WhatsApp, Telegram. etc.).",
-          code_link: "https://github.com/fridaychukwuamaka/mobileforce-digital-receipt",
+          code_link:
+            "https://github.com/fridaychukwuamaka/mobileforce-digital-receipt",
           app_link: "https://play.google.com/store/apps/details?id=xyz.degeit",
           img: require("../assets/images/PROMO.jpg"),
           tools: ["Flutter"],
@@ -126,11 +127,17 @@ p {
   width: 100%;
   height: calc((100vw / 3) * 0.83);
   background-position: center;
-  filter: brightness(0.5);
+  filter: brightness(0.35);
   background-size: cover;
   border-radius: 5px;
   flex: 2;
   flex-basis: 0;
+
+  transition: filter 1s ease-in-out;
+}
+
+#image:hover {
+  filter: brightness(0.7);
 }
 #tools {
   flex-direction: initial !important;
@@ -260,7 +267,7 @@ p {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    filter: brightness(0.5);
+    filter: brightness(0.35);
   }
 }
 </style>

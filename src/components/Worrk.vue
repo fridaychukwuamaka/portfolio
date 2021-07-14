@@ -1,14 +1,18 @@
 <template>
   <div id="work">
     <div id="title">
-      <p>My project</p>
+      <p>My projects</p>
       <div></div>
     </div>
     <transition name="fade3" appear>
       <div id="projects">
         <div id="project">
           <div id="image"></div>
-          <img src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" id="imagex" alt="">
+          <img
+            src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+            id="imagex"
+            alt=""
+          />
           <div id="writtings">
             <div id="heading">
               Lorem ipsum dolor sit amet
@@ -27,7 +31,11 @@
         </div>
         <div id="project">
           <div id="image"></div>
-          <img src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" id="imagex" alt="">
+          <img
+            src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+            id="imagex"
+            alt=""
+          />
           <div id="writtings">
             <div id="heading">
               Lorem ipsum dolor sit amet
@@ -45,8 +53,12 @@
           </div>
         </div>
         <div id="project">
-            <div id="image"></div>
-          <img src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" id="imagex" alt="">
+          <div id="image"></div>
+          <img
+            src="../assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+            id="imagex"
+            alt=""
+          />
           <div id="writtings">
             <div id="heading">
               Lorem ipsum dolor sit amet
@@ -102,7 +114,7 @@ p {
   margin: 0 10%;
 }
 
-#imagex{
+#imagex {
   display: none;
 }
 
@@ -178,10 +190,10 @@ p {
   #projects {
     margin: 0;
   }
-  #image{
+  #image {
     display: none;
   }
-  #imagex{
+  #imagex {
     display: block;
     width: 100%;
     height: auto;

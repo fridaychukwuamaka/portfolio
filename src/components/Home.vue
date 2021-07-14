@@ -26,7 +26,7 @@
             </a>
             <a :href="'#work'">
               <li @click="toggle(2)">
-                <a>My project</a>
+                <a>My projects</a>
                 <div :class="{ selected: selectMenu == 2 }"></div>
               </li>
             </a>
@@ -129,7 +129,7 @@ export default {
   /* opacity: 0; */
   /* opacity: 1 !important; */
 }
-.slide-home-side-move{
+.slide-home-side-move {
   transition: all;
 }
 .slide-home-side-leave {

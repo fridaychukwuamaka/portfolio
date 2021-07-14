@@ -27,7 +27,7 @@
             </a>
             <a :href="'#work'">
               <li @click="toggle(2)">
-                <a>My project</a>
+                <a>My projects</a>
                 <div :class="{ selected: selectMenu == 2 }"></div>
               </li>
             </a>
@@ -85,7 +85,7 @@ export default {
   position: fixed;
   z-index: 11;
   width: calc(100vw - 30px);
-   
+
   top: 0;
   left: 0;
   right: 0;

@@ -112,7 +112,7 @@ optimize usability`,
           role: "Frontend Developer",
           desc: [
             `Worked as a frontend web
-developer, contributed to a Bincom product Social Lender using Angular framework.`,
+developer, contributed to a Bincom product Social Lender using Angular and Ionic framework.`,
 'Integrated repayent option on Social lender: Paytack and Flutterwave',
             `Managed social lender mobile app on playstore.`,
             `Carry out quality assurance tests to discover errors and
