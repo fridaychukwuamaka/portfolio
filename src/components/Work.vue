@@ -167,8 +167,6 @@ p {
 .fade6-enter-active {
   transition: opacity 2s ease-in;
 }
-.fade6-leave {
-}
 .fade6-leave-active {
   transition: opacity 2s ease-in-out;
   opacity: 0;
