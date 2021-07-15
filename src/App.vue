@@ -63,7 +63,7 @@
           </router-link>
         </ul>
         <div id="downld-cv">
-          <a href="" download>Resume</a>
+          <a target="_blank" href="https://drive.google.com/file/d/17ncK6Cz6za75YsRpjQM-5mXLboLfl99U/view?usp=sharing" download>Resume</a>
         </div>
       </div>
       <div id="side-bar">
