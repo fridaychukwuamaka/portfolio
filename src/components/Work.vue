@@ -61,7 +61,7 @@ export default {
             "This an online Grocery store shopping app. You can can your favoutite item.",
           code_link:
             "https://github.com/fridaychukwuamaka/Flutter-Grocery-App-UI-main",
-          app_link: "",
+          app_link: "https://drive.google.com/file/d/1-b-ZCmjhCBrXXqoRkO_EZD51OIbXf3Nx/view?usp=sharing",
           img: require("../assets/images/Cover.png"),
           tools: ["Flutter", "Firebase"],
         },
@@ -71,7 +71,7 @@ export default {
           detail:
             "It is a mobile app connected to an embedded system, it allows the user to get information about the farm and can also send commands to the embedded system.",
           code_link: "https://github.com/fridaychukwuamaka/smart_irrigation",
-          app_link: "",
+          app_link: "https://drive.google.com/file/d/18cPcgRh_2-v6IU9M-uzsSccKcpjHgCfS/view?usp=sharing",
           img: require("../assets/images/irrigation.png"),
           tools: ["Flutter", "Firebase", "Arduino"],
         },
@@ -91,7 +91,7 @@ export default {
           detail:
             "A mobile app built with flutter that is able to plays all the songs on the local storage. User can also create and delete playlist",
           code_link: "https://github.com/fridaychukwuamaka/music_app_v3",
-          app_link: "",
+          app_link: "https://drive.google.com/file/d/1xTq_1ix-Mry26y7b-jpnkijOEuFBN2wb/view?usp=sharing",
           img: require("../assets/images/musicapp.png"),
           tools: ["Flutter"],
         },
@@ -101,7 +101,7 @@ export default {
           detail:
             "It is a mobile app built with flutter that can scan low energy devices such as headphone, airpods etc.",
           code_link: "https://github.com/fridaychukwuamaka/BLE-scanner",
-          app_link: "",
+          app_link: "https://drive.google.com/file/d/12RhlJadFy7rm6wZK4xif3OIaKFO5HyW3/view?usp=sharing",
           img: null,
 
           tools: ["Flutter"],
