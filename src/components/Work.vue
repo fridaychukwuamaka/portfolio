@@ -101,7 +101,7 @@ export default {
           detail:
             "It is a mobile app built with flutter that can scan low energy devices such as headphone, airpods etc.",
           code_link: "https://github.com/fridaychukwuamaka/BLE-scanner",
-          app_link: "https://drive.google.com/file/d/12RhlJadFy7rm6wZK4xif3OIaKFO5HyW3/view?usp=sharing",
+          app_link: "https://drive.google.com/file/d/1-wcwSs9IuE2q2l0nwKF0xbmnk5seI_eU/view?usp=sharing",
           img: null,
 
           tools: ["Flutter"],
