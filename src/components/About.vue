@@ -11,7 +11,7 @@
           <div>
             <p id="text">
               My name is <b> Friday Chukwauamaka Kareen</b> I am
-              currently a 400 level student studying computer science at Federal
+              currently a final year student studying computer science at Federal
               University of Petroleum Resources Effurun, Delta State, Nigeria. I love to
               solve problems. Whether it's finding the most elegant way to write
               a line of code or figuring out which chord fits best into a
