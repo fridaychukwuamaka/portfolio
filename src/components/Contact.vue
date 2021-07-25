@@ -22,10 +22,6 @@
         <github-icon size="1.5x"></github-icon>
         <p>GitHub</p>
       </a>
-      <a target="_blank" href="https://twitter.com/FridayChukwuam2" id="icon">
-        <twitter-icon size="1.5x"></twitter-icon>
-        <p>Twitter</p>
-      </a>
       <form  action="mailto:fridaychukwuamaka@gmail.com?subject= message" method="get"  enctype="text/plain">
         <button id="icon" class="email-icon">
           <mail-icon size="1.5x"></mail-icon>
@@ -104,7 +100,8 @@ a {
   right: 0;
   bottom: 0;
   font-family: Montserrat-Medium;
-  font-size: 0.9em;
+  font-size: 0.75em;
+  line-height: 2 !important;
   text-align: center;
   line-height: 30px;
 }

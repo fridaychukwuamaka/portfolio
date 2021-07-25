@@ -26,6 +26,7 @@
               <li>Flutter</li>
               <li>Vue</li>
               <li>Firebase</li>
+              <li>MongoDB</li>
               <li>Node.js</li>
             </ul>
           </div>

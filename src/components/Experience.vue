@@ -90,7 +90,7 @@ export default {
         {
           placement: `Freelance`,
           role: "Mobile Developer",
-          desc: [`Cooperate with designers to create clean interfaces and
+          desc: [`Cooperated with the designers to create clean interfaces and
 simple, intuitive interactions and experiences using Flutter.`, 'Integrated google maps to a client application'],
           period: `November 2020 - Present`,
           index: 0,
@@ -99,7 +99,7 @@ simple, intuitive interactions and experiences using Flutter.`, 'Integrated goog
           placement: `HNG Internship`,
           role: "Mobile Developer",
           desc: [
-            `Cooperate with designers to create clean interfaces and
+            `Cooperated with designers to create clean interfaces and
 simple, intuitive interactions and experiences using Flutter.`,
             `Carry out quality assurance tests to discover errors and
 optimize usability`,

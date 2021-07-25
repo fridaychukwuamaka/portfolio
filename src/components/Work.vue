@@ -58,7 +58,7 @@ export default {
         {
           title: "Nectar Grocery Store",
           detail:
-            "This an online Grocery store shopping app. You can can your favoutite item.",
+            "This an online Grocery store shopping app. You can create a cart  and save your favoutite items.",
           code_link:
             "https://github.com/fridaychukwuamaka/Flutter-Grocery-App-UI-main",
           app_link: "https://drive.google.com/file/d/1-b-ZCmjhCBrXXqoRkO_EZD51OIbXf3Nx/view?usp=sharing",
@@ -99,12 +99,21 @@ export default {
         {
           title: "BLE Scanner",
           detail:
-            "It is a mobile app built with flutter that can scan low energy devices such as headphone, airpods etc.",
+            "It is a mobile app built with flutter that can scan low energy devices such as headphone, airpods etc. and also get their distance from the mobile phone",
           code_link: "https://github.com/fridaychukwuamaka/BLE-scanner",
           app_link: "https://drive.google.com/file/d/1-wcwSs9IuE2q2l0nwKF0xbmnk5seI_eU/view?usp=sharing",
           img: null,
 
           tools: ["Flutter"],
+        },
+        {
+          title: "Portfoilo Website",
+          detail:
+            "It is a portfolio website I built for myself using Vue",
+          code_link: "https://github.com/fridaychukwuamaka/BLE-scanner",
+          app_link: "https://github.com/fridaychukwuamaka/portfolio",
+          img: null,
+          tools: ["Vue js"],
         },
       ],
     };
