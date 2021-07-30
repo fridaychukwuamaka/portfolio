@@ -90,8 +90,12 @@ export default {
         {
           placement: `Freelance`,
           role: "Mobile Developer",
-          desc: [`Cooperated with the designers to create clean interfaces and
-simple, intuitive interactions and experiences using Flutter.`, 'Integrated google maps to a client application'],
+          desc: [
+            `Cooperated with the designers to create clean interfaces and
+simple, intuitive interactions and experiences for mobile and larger devices using Flutter.`,
+'Made the flutter web app responsive for mobile phones and tablet',
+            "Integrated google maps to a client application",
+          ],
           period: `November 2020 - Present`,
           index: 0,
         },
@@ -113,7 +117,7 @@ optimize usability`,
           desc: [
             `Worked as a frontend web
 developer, contributed to a Bincom product Social Lender using Angular and Ionic framework.`,
-'Integrated repayent option on Social lender: Paytack and Flutterwave',
+            "Integrated repayent option on Social lender: Paytack and Flutterwave",
             `Managed social lender mobile app on playstore.`,
             `Carry out quality assurance tests to discover errors and
 optimize usability`,
@@ -303,8 +307,8 @@ li::marker {
   }
 } */
 ol {
-    padding-left: 15px;
-  }
+  padding-left: 15px;
+}
 
 #title div {
   height: 1.5px;
@@ -322,7 +326,7 @@ ol {
     flex-direction: column;
     margin-bottom: 35px;
   }
-  
+
   #view {
     display: none;
   }

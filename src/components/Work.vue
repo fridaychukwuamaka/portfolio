@@ -29,10 +29,10 @@
             </div>
 
             <div id="links">
-              <a target="_blank" :href="work.app_link" id="link"
+              <a rel="noreferrer" target="_blank" :href="work.app_link" id="link"
                 ><p>View project</p>
               </a>
-              <a target="_blank" :href="work.code_link" id="link"
+              <a  rel="noreferrer" target="_blank" :href="work.code_link" id="link"
                 ><p>View code</p>
               </a>
             </div>
@@ -56,26 +56,6 @@ export default {
     return {
       works: [
         {
-          title: "Nectar Grocery Store",
-          detail:
-            "This an online Grocery store shopping app. You can create a cart  and save your favoutite items.",
-          code_link:
-            "https://github.com/fridaychukwuamaka/Flutter-Grocery-App-UI-main",
-          app_link: "https://drive.google.com/file/d/1-b-ZCmjhCBrXXqoRkO_EZD51OIbXf3Nx/view?usp=sharing",
-          img: require("../assets/images/Cover.png"),
-          tools: ["Flutter", "Firebase"],
-        },
-
-        {
-          title: "Smart Irrigation",
-          detail:
-            "It is a mobile app connected to an embedded system, it allows the user to get information about the farm and can also send commands to the embedded system.",
-          code_link: "https://github.com/fridaychukwuamaka/smart_irrigation",
-          app_link: "https://drive.google.com/file/d/18cPcgRh_2-v6IU9M-uzsSccKcpjHgCfS/view?usp=sharing",
-          img: require("../assets/images/irrigation.png"),
-          tools: ["Flutter", "Firebase", "Arduino"],
-        },
-        {
           title: "Deigit",
           detail:
             "Degeit is a mobile application that helps merchants to generate digital copies of receipt for every transaction made. It is specially made for merchants who sell online (Instagram, Facebook, Twitter, WhatsApp, Telegram. etc.).",
@@ -91,9 +71,32 @@ export default {
           detail:
             "A mobile app built with flutter that is able to plays all the songs on the local storage. User can also create and delete playlist",
           code_link: "https://github.com/fridaychukwuamaka/music_app_v3",
-          app_link: "https://drive.google.com/file/d/1xTq_1ix-Mry26y7b-jpnkijOEuFBN2wb/view?usp=sharing",
+          app_link:
+            "https://drive.google.com/file/d/1xTq_1ix-Mry26y7b-jpnkijOEuFBN2wb/view?usp=sharing",
           img: require("../assets/images/musicapp.png"),
           tools: ["Flutter"],
+        },
+        {
+          title: "Nectar Grocery Store",
+          detail:
+            "This an online Grocery store shopping app. You can create a cart  and save your favoutite items.",
+          code_link:
+            "https://github.com/fridaychukwuamaka/Flutter-Grocery-App-UI-main",
+          app_link:
+            "https://drive.google.com/file/d/1-b-ZCmjhCBrXXqoRkO_EZD51OIbXf3Nx/view?usp=sharing",
+          img: require("../assets/images/Cover.png"),
+          tools: ["Flutter", "Firebase"],
+        },
+
+        {
+          title: "Smart Irrigation",
+          detail:
+            "It is a mobile app connected to an embedded system, it allows the user to get information about the farm and can also send commands to the embedded system.",
+          code_link: "https://github.com/fridaychukwuamaka/smart_irrigation",
+          app_link:
+            "https://drive.google.com/file/d/18cPcgRh_2-v6IU9M-uzsSccKcpjHgCfS/view?usp=sharing",
+          img: require("../assets/images/irrigation.png"),
+          tools: ["Flutter", "Firebase", "Arduino"],
         },
 
         {
@@ -101,17 +104,17 @@ export default {
           detail:
             "It is a mobile app built with flutter that can scan low energy devices such as headphone, airpods etc. and also get their distance from the mobile phone",
           code_link: "https://github.com/fridaychukwuamaka/BLE-scanner",
-          app_link: "https://drive.google.com/file/d/1-wcwSs9IuE2q2l0nwKF0xbmnk5seI_eU/view?usp=sharing",
+          app_link:
+            "https://drive.google.com/file/d/1-wcwSs9IuE2q2l0nwKF0xbmnk5seI_eU/view?usp=sharing",
           img: null,
 
           tools: ["Flutter"],
         },
         {
           title: "Portfoilo Website",
-          detail:
-            "It is a portfolio website I built for myself using Vue",
-          code_link: "https://github.com/fridaychukwuamaka/BLE-scanner",
-          app_link: "https://github.com/fridaychukwuamaka/portfolio",
+          detail: "It is a portfolio website I built for myself using Vue",
+          code_link: "https://github.com/fridaychukwuamaka/portfolio",
+          app_link: "/",
           img: null,
           tools: ["Vue js"],
         },
