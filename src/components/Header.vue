@@ -43,11 +43,15 @@
                 <div :class="{ selected: selectMenu == 4 }"></div>
               </li>
             </a>
-            <a target="_blank" href="https://drive.google.com/file/d/17ncK6Cz6za75YsRpjQM-5mXLboLfl99U/view?usp=sharing" download>
-              <li id="download">
-                <a>Resume</a>
-              </li>
-            </a>
+
+            <li id="download">
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/17ncK6Cz6za75YsRpjQM-5mXLboLfl99U/view?usp=sharing"
+                download
+                >Resume</a
+              >
+            </li>
           </ul>
         </div>
       </div>

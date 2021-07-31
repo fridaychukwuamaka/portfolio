@@ -44,7 +44,7 @@
             </a>
             <a target="_blank" href="https://drive.google.com/file/d/17ncK6Cz6za75YsRpjQM-5mXLboLfl99U/view?usp=sharing" download>
               <li id="download">
-                <a>Resume</a>
+                Resume
               </li>
             </a>
           </ul>
