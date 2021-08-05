@@ -47,7 +47,7 @@
             <li id="download">
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/17ncK6Cz6za75YsRpjQM-5mXLboLfl99U/view?usp=sharing"
+                href="https://drive.google.com/file/d/1lsF7Tgzr5PwY-rACSrYrzfxj7B0_Wq4y/view?usp=sharing"
                 download
                 >Resume</a
               >

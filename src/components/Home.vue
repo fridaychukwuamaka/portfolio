@@ -42,7 +42,7 @@
                 <div :class="{ selected: selectMenu == 4 }"></div>
               </li>
             </a>
-            <a target="_blank" href="https://drive.google.com/file/d/17ncK6Cz6za75YsRpjQM-5mXLboLfl99U/view?usp=sharing" download>
+            <a target="_blank" href="https://drive.google.com/file/d/1lsF7Tgzr5PwY-rACSrYrzfxj7B0_Wq4y/view?usp=sharing" download>
               <li id="download">
                 Resume
               </li>

@@ -10,14 +10,15 @@
         <transition name="slide-home-up" appear>
           <div>
             <p id="text">
-              My name is <b> Friday Chukwauamaka Kareen</b> I am
-              currently a final year student studying computer science at Federal
-              University of Petroleum Resources Effurun, Delta State, Nigeria. I love to
-              solve problems. Whether it's finding the most elegant way to write
-              a line of code or figuring out which chord fits best into a
-              progression, I love the challenge of finding a way and discovery
-              solutions. As long as there's a problem to solve or a challenge to
-              puzzle over, it's bound to be something I love!
+              My name is <b>Friday Chukwuamaka Kareen</b> I am a mobile
+              developer based in Nigeria. I love to solve problems. Whether it's
+              finding the most elegant way to write a line of code or figuring
+              out which chord fits best into a progression, I love the challenge
+              of finding a way and discovering solutions. As long as there's a
+              problem to solve or a challenge to puzzle over, it's bound to be
+              something I love!. One of my biggest strengths is translating
+              UI/UX design to code you can see the evidence from my projects and
+              this website.
             </p>
             <p id="text">
               Here are a few technologies I've been working with recently:
@@ -28,6 +29,7 @@
               <li>Firebase</li>
               <li>MongoDB</li>
               <li>Node.js</li>
+              <li>Arduino</li>
             </ul>
           </div>
         </transition>
@@ -76,7 +78,6 @@ export default {
   /* animation: slide1-out 1s ease-out forwards; */
   /* opacity: 1 !important; */
 }
-
 
 ul.skills-list {
   list-style-type: none;
@@ -213,7 +214,7 @@ ul.skills-list {
     margin: 0;
   }
 
-  .skills-list{
+  .skills-list {
     margin-bottom: 50px !important;
   }
 

@@ -93,7 +93,7 @@ export default {
           desc: [
             `Cooperated with the designers to create clean interfaces and
 simple, intuitive interactions and experiences for mobile and larger devices using Flutter.`,
-'Made the flutter web app responsive for mobile phones and tablet',
+'Made the flutter web app responsive for mobile phones and tablet devices.',
             "Integrated google maps to a client application",
           ],
           period: `November 2020 - Present`,
