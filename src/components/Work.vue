@@ -83,7 +83,7 @@ export default {
           code_link:
             "https://github.com/fridaychukwuamaka/Flutter-Grocery-App-UI-main",
           app_link:
-            "https://drive.google.com/file/d/1-b-ZCmjhCBrXXqoRkO_EZD51OIbXf3Nx/view?usp=sharing",
+            "https://drive.google.com/file/d/1yqqn0PT4jWMB6DxBC8q8k-rxEucJA2cM/view?usp=sharing",
           img: require("../assets/images/Cover.png"),
           tools: ["Flutter", "Firebase"],
         },
