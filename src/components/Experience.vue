@@ -96,7 +96,7 @@ simple, intuitive interactions and experiences for mobile and larger devices usi
 'Made the flutter web app responsive for mobile phones and tablet devices.',
             "Integrated google maps to a client application",
           ],
-          period: `November 2020 - Present`,
+          period: `December 2020 - July 2021`,
           index: 0,
         },
         {
@@ -122,7 +122,7 @@ developer, contributed to a Bincom product Social Lender using Angular and Ionic
             `Carry out quality assurance tests to discover errors and
 optimize usability`,
           ],
-          period: `June 2019 - November 2019`,
+          period: `June 2019 - December 2019`,
           index: 2,
         },
       ],
