@@ -104,6 +104,14 @@ export default {
   font-family: Montserrat-Medium;
   src: url(../assets/icon/Montserrat/Montserrat-Medium.ttf);
 }
+/* @font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap') format('woff2');
+  font-display: swap;
+} */
+
 .heading p {
   display: none;
 }

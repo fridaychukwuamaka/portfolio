@@ -116,7 +116,7 @@ export default {
           code_link: "https://github.com/fridaychukwuamaka/portfolio",
           app_link: "/",
           img: null,
-          tools: ["Vue js"],
+          tools: ["Vue js", "Netlify"],
         },
       ],
     };
