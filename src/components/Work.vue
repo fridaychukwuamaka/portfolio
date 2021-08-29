@@ -60,7 +60,7 @@ export default {
           detail:
             "Degeit is a mobile application that helps merchants to generate digital copies of receipt for every transaction made. It is specially made for merchants who sell online (Instagram, Facebook, Twitter, WhatsApp, Telegram. etc.).",
           code_link:
-            "https://github.com/fridaychukwuamaka/mobileforce-digital-receipt",
+            "https://github.com/fridaychukwuamaka/temp-mobile",
           app_link: "https://play.google.com/store/apps/details?id=xyz.degeit",
           img: require("../assets/images/PROMO.jpg"),
           tools: ["Flutter"],
