@@ -29,10 +29,26 @@
             </div>
 
             <div id="links">
-              <a rel="noreferrer" target="_blank" :href="work.app_link" id="link"
+              <a
+              v-show="work.xd_link != null"
+                rel="noreferrer"
+                target="_blank"
+                :href="work.xd_link"
+                id="link"
+                ><p>XD Link</p>
+              </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                :href="work.app_link"
+                id="link"
                 ><p>View project</p>
               </a>
-              <a  rel="noreferrer" target="_blank" :href="work.code_link" id="link"
+              <a
+                rel="noreferrer"
+                target="_blank"
+                :href="work.code_link"
+                id="link"
                 ><p>View code</p>
               </a>
             </div>
@@ -59,9 +75,9 @@ export default {
           title: "Deigit",
           detail:
             "Degeit is a mobile application that helps merchants to generate digital copies of receipt for every transaction made. It is specially made for merchants who sell online (Instagram, Facebook, Twitter, WhatsApp, Telegram. etc.).",
-          code_link:
-            "https://github.com/fridaychukwuamaka/temp-mobile",
+          code_link: "https://github.com/fridaychukwuamaka/temp-mobile",
           app_link: "https://play.google.com/store/apps/details?id=xyz.degeit",
+         
           img: require("../assets/images/PROMO.jpg"),
           tools: ["Flutter"],
         },
@@ -74,6 +90,7 @@ export default {
           app_link:
             "https://drive.google.com/file/d/1xTq_1ix-Mry26y7b-jpnkijOEuFBN2wb/view?usp=sharing",
           img: require("../assets/images/musicapp.png"),
+           xd_link: "https://xd.adobe.com/view/b4047f80-64cc-473c-8c0c-c3d67369f134-e157/",
           tools: ["Flutter"],
         },
         {
