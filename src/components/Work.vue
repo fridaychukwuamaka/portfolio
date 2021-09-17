@@ -88,7 +88,7 @@ export default {
             "A mobile app built with flutter that is able to plays all the songs on the local storage. User can also create and delete playlist",
           code_link: "https://github.com/fridaychukwuamaka/music_app_v3",
           app_link:
-            "https://drive.google.com/file/d/1xTq_1ix-Mry26y7b-jpnkijOEuFBN2wb/view?usp=sharing",
+            "https://drive.google.com/file/d/1VkMAM-sEvsx6vWvwich7158qLcx2RmiZ/view?usp=sharing",
           img: require("../assets/images/musicapp.png"),
            xd_link: "https://xd.adobe.com/view/b4047f80-64cc-473c-8c0c-c3d67369f134-e157/",
           tools: ["Flutter"],
