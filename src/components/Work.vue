@@ -96,24 +96,24 @@ export default {
         {
           title: "Nectar Grocery Store",
           detail:
-            "This an online Grocery store shopping app. You can create a cart  and save your favoutite items.",
+            "This an online Grocery store shopping app. You can create a cart, save your favourite items and make purchases.",
           code_link:
             "https://github.com/fridaychukwuamaka/Flutter-Grocery-App-UI-main",
           app_link:
             "https://drive.google.com/file/d/1yqqn0PT4jWMB6DxBC8q8k-rxEucJA2cM/view?usp=sharing",
           img: require("../assets/images/Cover.png"),
-          tools: ["Flutter", "Firebase"],
+          tools: ["Flutter", "Firebase", "Flutterwave"],
         },
 
         {
           title: "Smart Irrigation",
           detail:
-            "It is a mobile app connected to an embedded system, it allows the user to get information about the farm and can also send commands to the embedded system.",
+            "It is a mobile app connected to an embedded system, it allows the user to get information about the farm and can also send commands to the embedded system built with Esp32.",
           code_link: "https://github.com/fridaychukwuamaka/smart_irrigation",
           app_link:
             "https://drive.google.com/file/d/18cPcgRh_2-v6IU9M-uzsSccKcpjHgCfS/view?usp=sharing",
           img: require("../assets/images/irrigation.png"),
-          tools: ["Flutter", "Firebase", "Arduino"],
+          tools: ["Flutter", "Firebase", "Arduino", "ESP32"],
         },
 
         {
