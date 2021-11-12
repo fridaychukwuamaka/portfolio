@@ -15,7 +15,11 @@
   },
   "devDependencies": {
     "@vue/cli-service": "^4.5.13",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "set-value": ">=4.0.1",
+    "url-parse": ">=1.5.2",
+    "nth-check": ">=2.0.1",
+    "glob-parent": ">=5.1.2"
   },
   "browserslist": [
     "> 1%",
