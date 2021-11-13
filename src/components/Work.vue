@@ -115,7 +115,22 @@ export default {
           img: require("../assets/images/irrigation.png"),
           tools: ["Flutter", "Firebase", "Arduino", "ESP32"],
         },
-
+        {
+          title: "Scam Story app",
+          detail: "It is a mobile app where scam victims can share their stories and also get the latest scam news.",
+          code_link: "https://github.com/fridaychukwuamaka/scam_stories_app",
+          app_link: "https://drive.google.com/file/d/1DgOylHtYHYH37IIzmKj6Nh9-vgwbaYK3/view?usp=sharing",
+          img: null,
+          tools: ["Flutter", "Firebase", "Getx"],
+        },
+{
+          title: "Portfoilo Website",
+          detail: "It is a portfolio website I built for myself using Vue",
+          code_link: "https://github.com/fridaychukwuamaka/portfolio",
+          app_link: "/",
+          img: null,
+          tools: ["Vue js", "Netlify"],
+        },
         {
           title: "BLE Scanner",
           detail:
@@ -127,14 +142,7 @@ export default {
 
           tools: ["Flutter"],
         },
-        {
-          title: "Portfoilo Website",
-          detail: "It is a portfolio website I built for myself using Vue",
-          code_link: "https://github.com/fridaychukwuamaka/portfolio",
-          app_link: "/",
-          img: null,
-          tools: ["Vue js", "Netlify"],
-        },
+        
       ],
     };
   },
