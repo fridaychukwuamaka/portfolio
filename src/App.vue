@@ -63,7 +63,7 @@
           </router-link>
         </ul>
         <div id="downld-cv">
-          <a target="_blank" href="https://drive.google.com/file/d/1AzLsj-d4s6E51B3Qedf59p4E6jUZMvQP/view?usp=sharing" download>Resume</a>
+          <a target="_blank" href="https://drive.google.com/file/d/1GyMHEb7FsO8lZA01Ky9RrBo3Y738yP07/view?usp=drive_link" download>Resume</a>
         </div>
       </div>
       <div id="side-bar">
@@ -87,7 +87,6 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import Home from "./components/Home";
 import About from "./components/About";
-import Worrk from "./components/Worrk";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
@@ -107,7 +106,6 @@ export default {
     About,
     MoreAbout,
     Work,
-    Worrk,
     Experience,
     ChevronUpIcon,
     Contact,

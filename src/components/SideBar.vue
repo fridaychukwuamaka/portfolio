@@ -2,7 +2,7 @@
   <div id="side-bar-column">
     <a
       target="_blank"
-      href="https://www.linkedin.com/in/fridaychukwuamaka-14622a169"
+      href="https://www.linkedin.com/in/chukwuamaka-friday-14622a169/"
       id="icon"
     >
       <linkedin-icon size="1.2x"></linkedin-icon>

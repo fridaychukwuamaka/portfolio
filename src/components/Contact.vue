@@ -12,7 +12,7 @@
     <div id="icon-row">
       <a
         target="_blank"
-        href="https://www.linkedin.com/in/fridaychukwuamaka-14622a169"
+        href="https://www.linkedin.com/in/chukwuamaka-friday-14622a169/"
         id="icon"
       >
         <linkedin-icon size="1.5x"></linkedin-icon>
@@ -101,7 +101,7 @@ a {
   bottom: 0;
   font-family: Montserrat-Medium;
   font-size: 0.75em;
-  line-height: 2 !important;
+  line-height: 1.5 !important;
   text-align: center;
   line-height: 30px;
 }

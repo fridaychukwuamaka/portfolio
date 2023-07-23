@@ -10,7 +10,7 @@
       <div id="view">
         <div id="tab-bar">
           <button :class="{ unselected: currentIndex != 0 }" @click="moveTo(0)">
-            Freelance
+            LVNDR Health
             <transition name="fade2">
               <chevron-right-icon
                 v-if="currentIndex == 0"
@@ -20,7 +20,7 @@
             </transition>
           </button>
           <button :class="{ unselected: currentIndex != 1 }" @click="moveTo(1)">
-            HNG Internship
+            Ultainfinity Global Group
             <transition name="fade2">
               <chevron-right-icon
                 v-if="currentIndex == 1"
@@ -30,10 +30,40 @@
             </transition>
           </button>
           <button :class="{ unselected: currentIndex != 2 }" @click="moveTo(2)">
-            Bincom Dev centre
+            Green Mouse Technologies
             <transition name="fade2">
               <chevron-right-icon
                 v-if="currentIndex == 2"
+                size="1.2x"
+                id="chevron-right-icon"
+              ></chevron-right-icon>
+            </transition>
+          </button>
+          <button :class="{ unselected: currentIndex != 3 }" @click="moveTo(3)">
+            Rentvec
+            <transition name="fade2">
+              <chevron-right-icon
+                v-if="currentIndex == 3"
+                size="1.2x"
+                id="chevron-right-icon"
+              ></chevron-right-icon>
+            </transition>
+          </button>
+          <button :class="{ unselected: currentIndex != 4 }" @click="moveTo(4)">
+            HNG Internship
+            <transition name="fade2">
+              <chevron-right-icon
+                v-if="currentIndex == 4"
+                size="1.2x"
+                id="chevron-right-icon"
+              ></chevron-right-icon>
+            </transition>
+          </button>
+          <button :class="{ unselected: currentIndex != 5 }" @click="moveTo(5)">
+            Bincom Dev Centre
+            <transition name="fade2">
+              <chevron-right-icon
+                v-if="currentIndex == 5"
                 size="1.2x"
                 id="chevron-right-icon"
               ></chevron-right-icon>
@@ -88,42 +118,77 @@ export default {
     return {
       experience: [
         {
-          placement: `Freelance`,
-          role: "Mobile Developer",
+          placement: "LVNDR Health",
+          role: "Fullstack Developer",
           desc: [
-            `Cooperated with the designers to create clean interfaces and
-simple, intuitive interactions and experiences for mobile and larger devices using Flutter.`,
-'Made the flutter web app responsive for mobile phones and tablet devices.',
-            "Integrated google maps to a client application",
+            "Designed and developed an engaging cross-platform mobile app and created a progressive web app using Flutter and Flutter-web",
+            "Reduced testing time by 20% by identifying and fixing compatibility issues across various devices and platforms, ensuring a seamless user experience.",
+            "Implemented a feature that shows calls to the user, increasing the number of calls by 60% over the previous version of the app.",
+            "Increased unit test coverage from 10% to 80% by adding unit tests for Mobx stores and services using the mocktail library.",
+            "Designed a backend using Firebase with cloud functions and Typescript to manage a data pipeline for a mobile and web app.",
           ],
-          period: `December 2020 - July 2021`,
+          period: "September 2022 - Present",
           index: 0,
         },
         {
-          placement: `HNG Internship`,
+          placement: "Ultainfinity Global Group",
           role: "Mobile Developer",
           desc: [
-            `Cooperated with designers to create clean interfaces and
-simple, intuitive interactions and experiences using Flutter.`,
-            `Carry out quality assurance tests to discover errors and
-optimize usability`,
+            "Built and delivered software solutions using a range of blockchain platforms and protocols, including Ethereum and Solana.",
+            "Implemented the Solana wallet mobile application for iOS and Android, including transaction sending and receiving, address management, and transaction history viewing.",
+            "Developed and tested the secure storage of sensitive user data for the application, resulting in an enhanced user experience with no incidents of data breaches.",
+          ],
+          period: "April 2022 - September 2022",
+          index: 1,
+        },
+
+        {
+          placement: "Green Mouse Technologies",
+          role: "Mobile Developer",
+          desc: [
+            "Developed, maintained, and managed complex software solutions for clients across various industries, including transportation and e-commerce, by regularly communicating with clients, managing deadlines, and delivering results",
+            "Supervised the technical aspects of complex and extensive undertakings, guaranteeing timely completion and maintaining exceptional levels of quality (90% of projects finished on time and with defect-free code) via defect tracking, version control, and development methodology",
+            "Stayed up-to-date with the latest advancements in technology and advised clients on how to integrate new technologies into their solutions",
+            "Developed mobile applications with efficient user interfaces and optimized performance for Android and iOS mobile environments, resulting in increased user satisfaction and a 23% increase in application downloads",
+          ],
+          period: "Dec 2021 - April 2022",
+          index: 2,
+        },
+        {
+          placement: "Rentvec",
+          role: "Mobile Developer",
+          desc: [
+            "Designed and developed the company's car-rental product with a cross-functional team of designers, back-end developers, and project managers.",
+            "Delivered a high-quality app with 100% code coverage by employing Flutter widgets, animations, and custom components to implement intricate UI designs across two platforms in less than a month.",
+            "Using third-party libraries and APIs to integrate advanced features, including push notifications, maps, and camera functions, leading to a higher customer engagement and retention.",
+            "Optimized speed performance by 20% and reduced network latency by 30% by reducing the rate of the widget rebuild and implementing a caching mechanism.",
+          ],
+          period: "Dec 2021 - April 2022",
+          index: 3,
+        },
+        {
+          placement: "HNG Internship",
+          role: "Mobile Developer",
+          desc: [
+            "Contributed to the development of a mobile application that generates merchant receipts and manages inventory within a team of four developers, using Agile development, and test-driven development.",
+            "Improved the overall code quality by performing code reviews and testing the beta release of the app, to ensure proper functionality and reduce the number of bugs reported by beta testers.",
+            "Conducted comprehensive testing of the application code using multiple devices, which resulted in superior mobile responsiveness on all screen sizes.",
+            "Accelerated the development process by developing reusable components for later usage and reducing the production time of features from 2 weeks to 2 days.",
           ],
           period: `June 2020 - August 2020`,
-          index: 1,
+          index: 4,
         },
         {
           placement: `Bincom Dev Centre`,
           role: "Frontend Developer",
           desc: [
-            `Worked as a frontend web
-developer, contributed to a Bincom product Social Lender using Angular and Ionic framework.`,
-            "Integrated repayent option on Social lender: Paytack and Flutterwave",
-            `Managed social lender mobile app on playstore.`,
-            `Carry out quality assurance tests to discover errors and
-optimize usability`,
+           "Worked as a front-end web developer and contributed to a Bincom product, Social Lender, using the Angular and Ionic framework.",
+           "Integrated payment options (Paystack and Flutterwave) on Social Lender's Android app, which more than 10,000 users use to access loans.",
+           "Managed social lender mobile app on Play Store by publishing release candidates, collecting user feedback, and implementing requested features.",
+           "Performed quality assurance tests to discover errors and optimize usability to improve the user experience of the application.",
           ],
           period: `June 2019 - December 2019`,
-          index: 2,
+          index: 5,
         },
       ],
       currentIndex: 0,

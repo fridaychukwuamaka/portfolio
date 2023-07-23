@@ -14,7 +14,7 @@
             :style="{ 'background-image': 'url(' + work.img + ')' }"
           ></div>
 
-          <div id="writtings">
+          <div id="writings">
             <div id="heading">
               {{ work.title }}
             </div>
@@ -30,7 +30,7 @@
 
             <div id="links">
               <a
-              v-show="work.xd_link != null"
+                v-show="work.xd_link != null"
                 rel="noreferrer"
                 target="_blank"
                 :href="work.xd_link"
@@ -38,13 +38,31 @@
                 ><p>XD Link</p>
               </a>
               <a
+                v-show="work.play_store_link != null"
+                rel="noreferrer"
+                target="_blank"
+                :href="work.play_store_link"
+                id="link"
+                ><p>Play Store</p>
+              </a>
+              <a
+                v-show="work.app_store_link != null"
+                rel="noreferrer"
+                target="_blank"
+                :href="work.app_store_link"
+                id="link"
+                ><p>App Store</p>
+              </a>
+              <a
+                v-show="work.app_link != null"
                 rel="noreferrer"
                 target="_blank"
                 :href="work.app_link"
                 id="link"
-                ><p>View project</p>
+                ><p>View Project</p>
               </a>
               <a
+                v-show="work.code_link != null"
                 rel="noreferrer"
                 target="_blank"
                 :href="work.code_link"
@@ -75,13 +93,49 @@ export default {
           title: "Deigit",
           detail:
             "Degeit is a mobile application that helps merchants to generate digital copies of receipt for every transaction made. It is specially made for merchants who sell online (Instagram, Facebook, Twitter, WhatsApp, Telegram. etc.).",
-          code_link: "https://github.com/fridaychukwuamaka/temp-mobile",
-          app_link: "https://play.google.com/store/apps/details?id=xyz.degeit",
-         
-          img: require("../assets/images/PROMO.jpg"),
-          tools: ["Flutter"],
-        },
+          // code_link: "https://github.com/fridaychukwuamaka/temp-mobile",
+          play_store_link:
+            "https://play.google.com/store/apps/details?id=xyz.degeit",
 
+          img: require("../assets/images/PROMO.jpg"),
+          tools: ["Flutter, Provider"],
+        },
+        {
+          title: "Daabo",
+          detail:
+            "Daabo provides device protection and repair services for mobile phones, laptops, tablets, and other electronic devices.",
+          play_store_link:
+            "https://play.google.com/store/apps/details?id=com.getdaabo.daabo",
+          img: require("../assets/images/daabo_cover.jpeg"),
+          tools: ["Flutter, Getx, Firebase"],
+        },
+        {
+          title: "Deepend",
+          detail:
+            "Deepend is an all in one mobile app for anything ranging from food ordering, equipment renting, studio booking, VR Games and Hotel booking.",
+          play_store_link:
+            "https://play.google.com/store/apps/details?id=com.deepend",
+          img: require("../assets/images/deepend_cover.jpeg"),
+          tools: ["Flutter, Getx"],
+        },
+        {
+          title: "Hayahg",
+          detail:
+            "Deepend is an all in one mobile app for anything ranging from food ordering, equipment renting, studio booking, VR Games and Hotel booking.",
+          play_store_link:
+            "https://play.google.com/store/apps/details?id=com.deepend",
+
+          img: require("../assets/images/deepend_cover.jpeg"),
+          tools: ["Flutter, Getx"],
+        },
+        {
+          title: "Portfoilo Website",
+          detail: "It is a portfolio website I built for myself using Vue",
+          code_link: "https://github.com/fridaychukwuamaka/portfolio",
+          app_link: "/",
+          img: require("../assets/images/portfolio_cover.jpeg"),
+          tools: ["Vue js", "Netlify"],
+        },
         {
           title: "Music Player",
           detail:
@@ -90,21 +144,10 @@ export default {
           app_link:
             "https://drive.google.com/file/d/1wc29LKxza05L8P6U-uRdmYcZ5zx5nctk/view?usp=sharing",
           img: require("../assets/images/musicapp.png"),
-           xd_link: "https://xd.adobe.com/view/b4047f80-64cc-473c-8c0c-c3d67369f134-e157/",
+          xd_link:
+            "https://xd.adobe.com/view/b4047f80-64cc-473c-8c0c-c3d67369f134-e157/",
           tools: ["Flutter"],
         },
-        {
-          title: "Nectar Grocery Store",
-          detail:
-            "This an online Grocery store shopping app. You can create a cart, save your favourite items and make purchases.",
-          code_link:
-            "https://github.com/fridaychukwuamaka/Flutter-Grocery-App-UI-main",
-          app_link:
-            "https://drive.google.com/file/d/1yqqn0PT4jWMB6DxBC8q8k-rxEucJA2cM/view?usp=sharing",
-          img: require("../assets/images/Cover.png"),
-          tools: ["Flutter", "Firebase", "Flutterwave"],
-        },
-
         {
           title: "Smart Irrigation",
           detail:
@@ -117,20 +160,15 @@ export default {
         },
         {
           title: "Scam Story app",
-          detail: "It is a mobile app where scam victims can share their stories and also get the latest scam news.",
+          detail:
+            "It is a mobile app where scam victims can share their stories and also get the latest scam news.",
           code_link: "https://github.com/fridaychukwuamaka/scam_stories_app",
-          app_link: "https://drive.google.com/file/d/1DgOylHtYHYH37IIzmKj6Nh9-vgwbaYK3/view?usp=sharing",
+          app_link:
+            "https://drive.google.com/file/d/1DgOylHtYHYH37IIzmKj6Nh9-vgwbaYK3/view?usp=sharing",
           img: null,
           tools: ["Flutter", "Firebase", "Getx"],
         },
-{
-          title: "Portfoilo Website",
-          detail: "It is a portfolio website I built for myself using Vue",
-          code_link: "https://github.com/fridaychukwuamaka/portfolio",
-          app_link: "/",
-          img: null,
-          tools: ["Vue js", "Netlify"],
-        },
+
         {
           title: "BLE Scanner",
           detail:
@@ -142,7 +180,6 @@ export default {
 
           tools: ["Flutter"],
         },
-        
       ],
     };
   },
@@ -217,7 +254,7 @@ p {
   margin-top: 69.5px;
   padding: 15px;
 }
-#writtings {
+#writings {
   width: 100%;
   flex: 1;
 }

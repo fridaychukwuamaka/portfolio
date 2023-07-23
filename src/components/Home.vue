@@ -42,7 +42,7 @@
                 <div :class="{ selected: selectMenu == 4 }"></div>
               </li>
             </a>
-            <a target="_blank" href="https://drive.google.com/file/d/1AzLsj-d4s6E51B3Qedf59p4E6jUZMvQP/view?usp=sharing" download>
+            <a target="_blank" href="https://drive.google.com/file/d/1GyMHEb7FsO8lZA01Ky9RrBo3Y738yP07/view?usp=drive_link" download>
               <li id="download">
                 Resume
               </li>
@@ -61,7 +61,7 @@
         </transition>
       </div>
       <transition name="slide-home-up" appear>
-        <p id="story">I am a full-stack web developer and a mobile developer</p>
+        <p id="story">I am fullstack mobile developer</p>
       </transition>
     </div>
     <div style="height: 75px"></div>

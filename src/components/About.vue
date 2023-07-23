@@ -25,10 +25,10 @@
             </p>
             <ul class="skills-list">
               <li>Flutter</li>
-              <li>Vue</li>
               <li>Firebase</li>
-              <li>MongoDB</li>
               <li>Node.js</li>
+              <li>Vue</li>
+              <li>MongoDB</li>
               <li>Arduino</li>
             </ul>
           </div>
@@ -36,7 +36,7 @@
         <transition name="fade3" appear>
           <img
             id="image"
-            src="../assets/images/IMG_20200810_170143564~3.png"
+            src="../assets/images/IMG_20200810_170143564~3.jpeg"
             alt="pix"
           />
         </transition>
