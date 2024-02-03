@@ -13,8 +13,7 @@
     "eslint-plugin-vue": "^9.20.1"
   },
   "dependencies": {
-    "vue": "^3.2.0",
-    "vue-aos": "^3.1.0",
+    "vue": "^3.4.15",
     "vue-feather-icons": "^5.1.0",
     "vue-router": "^4.2.5"
   }

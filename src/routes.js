@@ -8,5 +8,5 @@ export const routes = [
   { path: "/about", component: About },
   { path: "/work", component: Work },
   { path: "/experience", component: Experience },
-  { path: "*", redirect: '/' },
+  { path: "/:pathMatch(.*)*", name: "NotFound", component: Experience },
 ];
