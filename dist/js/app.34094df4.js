@@ -308,7 +308,7 @@
           var e = this,
             t = e.$createElement,
             i = e._self._c || t;
-          return i("div", { attrs: { id: "downld-cv" } }, [
+          return i("div", { attrs: { id: "download-cv" } }, [
             i(
               "a",
               {
@@ -1349,7 +1349,7 @@
             ]),
             e._l(e.experience, function (t) {
               return i("div", { key: t.index, attrs: { id: "row" } }, [
-                i("div", { attrs: { id: "exprnce" } }, [
+                i("div", { attrs: { id: "experience" } }, [
                   i("p", { attrs: { id: "place" } }, [
                     e._v(e._s(t.placement) + " - " + e._s(t.role)),
                   ]),

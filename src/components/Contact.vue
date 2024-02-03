@@ -38,15 +38,15 @@
 import {
   LinkedinIcon,
   GithubIcon,
-  TwitterIcon,
+  // TwitterIcon,
   MailIcon,
 } from "vue-feather-icons";
 export default {
-  name: "Contact",
+  name: "ContactPage",
   components: {
     LinkedinIcon,
     GithubIcon,
-    TwitterIcon,
+    // TwitterIcon,
     MailIcon,
   },
 };

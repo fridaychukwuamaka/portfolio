@@ -26,7 +26,7 @@
 import {
   LinkedinIcon,
   GithubIcon,
-  TwitterIcon,
+  // TwitterIcon,
   MailIcon,
 } from "vue-feather-icons";
 
@@ -35,7 +35,7 @@ export default {
   components: {
     LinkedinIcon,
     GithubIcon,
-    TwitterIcon,
+    // TwitterIcon,
     MailIcon,
   },
 };

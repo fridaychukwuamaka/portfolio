@@ -48,11 +48,11 @@
 </template>
 
 <script>
-import MoreAbout from "./MoreAbout";
+// import MoreAbout from "./MoreAbout";
 export default {
-  name: "About",
+  name: "AboutPage",
   components: {
-    MoreAbout,
+    // MoreAbout,
   },
   props: {
     msg: String,

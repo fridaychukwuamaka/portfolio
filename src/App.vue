@@ -62,8 +62,13 @@
             </li>
           </router-link>
         </ul>
-        <div id="downld-cv">
-          <a target="_blank" href="https://drive.google.com/file/d/1GyMHEb7FsO8lZA01Ky9RrBo3Y738yP07/view?usp=drive_link" download>Resume</a>
+        <div id="download-cv">
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1GyMHEb7FsO8lZA01Ky9RrBo3Y738yP07/view?usp=drive_link"
+            download
+            >Resume</a
+          >
         </div>
       </div>
       <div id="side-bar">
@@ -84,14 +89,13 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import Home from "./components/Home";
 import About from "./components/About";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
-import Header from "./components/Header";
-import MoreAbout from "./components/MoreAbout";
+// import Header from "./components/Header";
+// import MoreAbout from "./components/MoreAbout";
 import SplashScreen from "./components/SplashScreen";
 import SideBar from "./components/SideBar";
 import { ChevronUpIcon } from "vue-feather-icons";
@@ -99,12 +103,12 @@ import { ChevronUpIcon } from "vue-feather-icons";
 export default {
   name: "App",
   components: {
-    Header,
+    // Header,
     SplashScreen,
     SideBar,
     Home,
     About,
-    MoreAbout,
+    // MoreAbout,
     Work,
     Experience,
     ChevronUpIcon,
@@ -123,10 +127,10 @@ export default {
       this.link = val;
     },
   },
-  beforeUpdate: function() {
+  beforeUpdate: function () {
     this.currentRoute = window.location.pathname;
   },
-  beforeCreate: function() {
+  beforeCreate: function () {
     this.splashScreen = false;
     setTimeout(() => {
       this.splashScreen = true;
@@ -148,11 +152,11 @@ export default {
   min-height: 100vh;
   flex-direction: column;
 }
-#downld-cv {
+#download-cv {
   margin-right: 55px;
   cursor: pointer;
 }
-#downld-cv a {
+#download-cv a {
   border: solid 1.5px;
   font-family: "Montserrat-Medium";
   padding: 10px;

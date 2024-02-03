@@ -78,13 +78,13 @@
 </template>
 
 <script>
-import { ArrowRightIcon, ChevronRightIcon } from "vue-feather-icons";
+// import { ArrowRightIcon, ChevronRightIcon } from "vue-feather-icons";
 
 export default {
-  name: "Work",
+  name: "WorkPage",
   components: {
-    ArrowRightIcon,
-    ChevronRightIcon,
+    // ArrowRightIcon,
+    // ChevronRightIcon,
   },
   data: () => {
     return {

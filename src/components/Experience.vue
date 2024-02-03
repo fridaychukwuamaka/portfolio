@@ -71,7 +71,7 @@
           </button>
         </div>
         <div id="tab-view">
-          <template v-for="exp in experience">
+          <!-- <template v-for="exp in experience">
             <transition name="slide" :key="exp.index">
               <div v-if="currentIndex == exp.index">
                 <p id="tab-role">{{ exp.role }}</p>
@@ -83,12 +83,12 @@
                 <p id="tab-period">{{ exp.period }}</p>
               </div>
             </transition>
-          </template>
+          </template> -->
         </div>
       </div>
     </transition>
     <div id="row" v-for="exp in experience" :key="exp.index">
-      <div id="exprnce">
+      <div id="experience">
         <p id="place">{{ exp.placement }} - {{ exp.role }}</p>
         <!-- <p id="desc">
           {{ exp.desc }}
@@ -110,7 +110,7 @@
 import { ChevronRightIcon } from "vue-feather-icons";
 
 export default {
-  name: "Experience",
+  name: "ExperiencePage",
   components: {
     ChevronRightIcon,
   },
@@ -182,10 +182,10 @@ export default {
           placement: `Bincom Dev Centre`,
           role: "Frontend Developer",
           desc: [
-           "Worked as a front-end web developer and contributed to a Bincom product, Social Lender, using the Angular and Ionic framework.",
-           "Integrated payment options (Paystack and Flutterwave) on Social Lender's Android app, which more than 10,000 users use to access loans.",
-           "Managed social lender mobile app on Play Store by publishing release candidates, collecting user feedback, and implementing requested features.",
-           "Performed quality assurance tests to discover errors and optimize usability to improve the user experience of the application.",
+            "Worked as a front-end web developer and contributed to a Bincom product, Social Lender, using the Angular and Ionic framework.",
+            "Integrated payment options (Paystack and Flutterwave) on Social Lender's Android app, which more than 10,000 users use to access loans.",
+            "Managed social lender mobile app on Play Store by publishing release candidates, collecting user feedback, and implementing requested features.",
+            "Performed quality assurance tests to discover errors and optimize usability to improve the user experience of the application.",
           ],
           period: `June 2019 - December 2019`,
           index: 5,
@@ -252,10 +252,10 @@ li::marker {
   margin: 0 10%;
   display: none;
 }
-#exprnce {
+#experience {
   margin: 35px 20px;
 }
-#exprnce p {
+#experience p {
   margin: 0;
 }
 #place {

@@ -69,11 +69,11 @@
 </template>
 
 <script>
-import VueAos from "vue-aos";
+// import VueAos from "vue-aos";
 export default {
-  name: "Home",
+  name: "HomePage",
   components: {
-    VueAos,
+    // VueAos,
   },
   props: {
     msg: String,
