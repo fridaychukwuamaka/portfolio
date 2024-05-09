@@ -38,28 +38,12 @@
                 ><p>XD Link</p>
               </a>
               <a
-                v-show="work.play_store_link != null"
+                v-show="work.appLink != null"
                 rel="noreferrer"
                 target="_blank"
-                :href="work.play_store_link"
+                :href="work.appLink"
                 id="link"
-                ><p>Play Store</p>
-              </a>
-              <a
-                v-show="work.app_store_link != null"
-                rel="noreferrer"
-                target="_blank"
-                :href="work.app_store_link"
-                id="link"
-                ><p>App Store</p>
-              </a>
-              <a
-                v-show="work.app_link != null"
-                rel="noreferrer"
-                target="_blank"
-                :href="work.app_link"
-                id="link"
-                ><p>View Project</p>
+                ><p>App Link</p>
               </a>
               <a
                 v-show="work.code_link != null"
@@ -90,12 +74,41 @@ export default {
     return {
       works: [
         {
+          title: "Yournews.ai",
+          detail:
+            "Yournews is a mobile application that provides users with the latest news and information on a wide range of topics. The app uses artificial intelligence to deliver personalized news content based on the user's preferences. Users can also interact with the app through voice commands, making it easy to stay informed on the go.",
+          appLink:
+            "https://play.google.com/store/apps/details?id=com.yournews.ai",
+
+          // img: require("../assets/images/yourchat_cover.png"),
+          tools: ["Flutter, Riverpod, Hive, ChatGPT"],
+        },
+        {
+          title: "Yourchat.ai",
+          detail:
+            "Yourchat is a revolutionary mobile application that seamlessly connects users with artificial intelligence, enabling engaging conversations and instant access to accurate information. Through its user-friendly interface, users can effortlessly ask questions and receive immediate responses, eliminating the need for extensive searches.",
+          appLink:
+            "https://play.google.com/store/apps/details?id=com.yourchat.ai",
+
+          img: require("../assets/images/yourchat_cover.png"),
+          tools: ["Flutter, Riverpod, SQLite, ChatGPT"],
+        },
+        {
+          title: "Vanmates Housing",
+          detail:
+            "The Vanmates Housing App offers a wealth of features that will make your life easier. Firstly, you can access all the details of your booked accommodation right from the app. Whether it's the location, room details, or house information, you can find everything you need in one place. You can even download your contract details directly from the app.",
+          appLink: "https://apps.apple.com/us/app/itunes-connect/id376771144",
+
+          img: require("../assets/images/vanmates_cover.jpg"),
+          tools: ["Flutter, Riverpod, Firebase, Hive, Notification"],
+        },
+
+        {
           title: "Deigit",
           detail:
             "Degeit is a mobile application that helps merchants to generate digital copies of receipt for every transaction made. It is specially made for merchants who sell online (Instagram, Facebook, Twitter, WhatsApp, Telegram. etc.).",
           // code_link: "https://github.com/fridaychukwuamaka/temp-mobile",
-          play_store_link:
-            "https://play.google.com/store/apps/details?id=xyz.degeit",
+          appLink: "https://play.google.com/store/apps/details?id=xyz.degeit",
 
           img: require("../assets/images/PROMO.jpg"),
           tools: ["Flutter, Provider"],
@@ -104,7 +117,7 @@ export default {
           title: "Daabo",
           detail:
             "Daabo provides device protection and repair services for mobile phones, laptops, tablets, and other electronic devices.",
-          play_store_link:
+          appLink:
             "https://play.google.com/store/apps/details?id=com.getdaabo.daabo",
           img: require("../assets/images/daabo_cover.jpeg"),
           tools: ["Flutter, Getx, Firebase"],
@@ -113,28 +126,36 @@ export default {
           title: "Deepend",
           detail:
             "Deepend is an all in one mobile app for anything ranging from food ordering, equipment renting, studio booking, VR Games and Hotel booking.",
-          play_store_link:
-            "https://play.google.com/store/apps/details?id=com.deepend",
+          appLink: "https://play.google.com/store/apps/details?id=com.deepend",
           img: require("../assets/images/deepend_cover.jpeg"),
           tools: ["Flutter, Getx"],
         },
         {
           title: "Hayahg",
           detail:
-            "Deepend is an all in one mobile app for anything ranging from food ordering, equipment renting, studio booking, VR Games and Hotel booking.",
-          play_store_link:
-            "https://play.google.com/store/apps/details?id=com.deepend",
+            "Hayahg mobile app is a platform that connects truck drivers with freight companies. It allows drivers to find and book loads, track their earnings, and manage their schedules.",
+          appLink:
+            "https://play.google.com/store/apps/details?id=com.hayahg.drivers",
 
-          img: require("../assets/images/deepend_cover.jpeg"),
           tools: ["Flutter, Getx"],
         },
         {
-          title: "Portfoilo Website",
+          title: "Portfolio Website",
           detail: "It is a portfolio website I built for myself using Vue",
           code_link: "https://github.com/fridaychukwuamaka/portfolio",
           app_link: "/",
           img: require("../assets/images/portfolio_cover.jpeg"),
           tools: ["Vue js", "Netlify"],
+        },
+        {
+          title: "Smart Irrigation",
+          detail:
+            "It is a mobile app connected to an embedded system, it allows the user to get information about the farm and can also send commands to the embedded system built with Esp32.",
+          code_link: "https://github.com/fridaychukwuamaka/smart_irrigation",
+          app_link:
+            "https://drive.google.com/file/d/18cPcgRh_2-v6IU9M-uzsSccKcpjHgCfS/view?usp=sharing",
+          img: require("../assets/images/irrigation.png"),
+          tools: ["Flutter", "Firebase", "Arduino", "ESP32"],
         },
         {
           title: "Music Player",
@@ -149,14 +170,15 @@ export default {
           tools: ["Flutter"],
         },
         {
-          title: "Smart Irrigation",
+          title: "BLE Scanner",
           detail:
-            "It is a mobile app connected to an embedded system, it allows the user to get information about the farm and can also send commands to the embedded system built with Esp32.",
-          code_link: "https://github.com/fridaychukwuamaka/smart_irrigation",
+            "It is a mobile app built with flutter that can scan low energy devices such as headphone, airpods etc. and also get their distance from the mobile phone",
+          code_link: "https://github.com/fridaychukwuamaka/BLE-scanner",
           app_link:
-            "https://drive.google.com/file/d/18cPcgRh_2-v6IU9M-uzsSccKcpjHgCfS/view?usp=sharing",
-          img: require("../assets/images/irrigation.png"),
-          tools: ["Flutter", "Firebase", "Arduino", "ESP32"],
+            "https://drive.google.com/file/d/1-wcwSs9IuE2q2l0nwKF0xbmnk5seI_eU/view?usp=sharing",
+          img: null,
+
+          tools: ["Flutter"],
         },
         {
           title: "Scam Story app",
@@ -167,18 +189,6 @@ export default {
             "https://drive.google.com/file/d/1DgOylHtYHYH37IIzmKj6Nh9-vgwbaYK3/view?usp=sharing",
           img: null,
           tools: ["Flutter", "Firebase", "Getx"],
-        },
-
-        {
-          title: "BLE Scanner",
-          detail:
-            "It is a mobile app built with flutter that can scan low energy devices such as headphone, airpods etc. and also get their distance from the mobile phone",
-          code_link: "https://github.com/fridaychukwuamaka/BLE-scanner",
-          app_link:
-            "https://drive.google.com/file/d/1-wcwSs9IuE2q2l0nwKF0xbmnk5seI_eU/view?usp=sharing",
-          img: null,
-
-          tools: ["Flutter"],
         },
       ],
     };

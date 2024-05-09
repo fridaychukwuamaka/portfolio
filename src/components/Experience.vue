@@ -9,71 +9,28 @@
     <transition name="slide1" appear>
       <div id="view">
         <div id="tab-bar">
-          <button :class="{ unselected: currentIndex != 0 }" @click="moveTo(0)">
-            LVNDR Health
+          <button
+            v-for="(exp, index) in experience"
+            :key="index"
+            :class="{ unselected: currentIndex != index }"
+            @click="moveTo(index)"
+          >
+            {{ exp.placement }}
             <transition name="fade2">
-              <chevron-right-icon
-                v-if="currentIndex == 0"
-                size="1.2x"
+              <vue-feather
+                type="chevron-right"
+                v-if="currentIndex == index"
+                size="1.1rem"
                 id="chevron-right-icon"
-              ></chevron-right-icon>
-            </transition>
-          </button>
-          <button :class="{ unselected: currentIndex != 1 }" @click="moveTo(1)">
-            Ultainfinity Global Group
-            <transition name="fade2">
-              <chevron-right-icon
-                v-if="currentIndex == 1"
-                size="1.2x"
-                id="chevron-right-icon"
-              ></chevron-right-icon>
-            </transition>
-          </button>
-          <button :class="{ unselected: currentIndex != 2 }" @click="moveTo(2)">
-            Green Mouse Technologies
-            <transition name="fade2">
-              <chevron-right-icon
-                v-if="currentIndex == 2"
-                size="1.2x"
-                id="chevron-right-icon"
-              ></chevron-right-icon>
-            </transition>
-          </button>
-          <button :class="{ unselected: currentIndex != 3 }" @click="moveTo(3)">
-            Rentvec
-            <transition name="fade2">
-              <chevron-right-icon
-                v-if="currentIndex == 3"
-                size="1.2x"
-                id="chevron-right-icon"
-              ></chevron-right-icon>
-            </transition>
-          </button>
-          <button :class="{ unselected: currentIndex != 4 }" @click="moveTo(4)">
-            HNG Internship
-            <transition name="fade2">
-              <chevron-right-icon
-                v-if="currentIndex == 4"
-                size="1.2x"
-                id="chevron-right-icon"
-              ></chevron-right-icon>
-            </transition>
-          </button>
-          <button :class="{ unselected: currentIndex != 5 }" @click="moveTo(5)">
-            Bincom Dev Centre
-            <transition name="fade2">
-              <chevron-right-icon
-                v-if="currentIndex == 5"
-                size="1.2x"
-                id="chevron-right-icon"
-              ></chevron-right-icon>
+              />
             </transition>
           </button>
         </div>
-        <div id="tab-view">
-          <!-- <template v-for="exp in experience">
-            <transition name="slide" :key="exp.index">
-              <div v-if="currentIndex == exp.index">
+
+        <div v-for="(exp, index) in experience" :key="index">
+          <div id="tab-view">
+            <transition name="slide">
+              <div v-if="currentIndex == index">
                 <p id="tab-role">{{ exp.role }}</p>
                 <ol>
                   <li v-for="desc in exp.desc" :key="desc" id="tab-desc">
@@ -83,18 +40,13 @@
                 <p id="tab-period">{{ exp.period }}</p>
               </div>
             </transition>
-          </template> -->
+          </div>
         </div>
       </div>
     </transition>
-    <div id="row" v-for="exp in experience" :key="exp.index">
-      <div id="experience">
+    <div id="row" v-for="(exp, index) in experience" :key="index">
+      <div id="exprnce">
         <p id="place">{{ exp.placement }} - {{ exp.role }}</p>
-        <!-- <p id="desc">
-          {{ exp.desc }}
-          
-        </p> -->
-
         <ol>
           <li id="desc" v-for="desc in exp.desc" :key="desc">
             {{ desc }}
@@ -107,52 +59,59 @@
 </template>
 
 <script>
-import { ChevronRightIcon } from "vue-feather-icons";
+import VueFeather from "vue-feather";
 
 export default {
   name: "ExperiencePage",
   components: {
-    ChevronRightIcon,
+    "vue-feather": VueFeather,
   },
   data: () => {
     return {
       experience: [
         {
+          placement: "ACIAGA Inc",
+          role: "Fullstack Developer",
+          desc: [
+            "Created and released two AI-driven mobile apps, accumulating more than 10,000 downloads, demonstrating expertise in Flutter framework and AI integration.",
+            "Efficiently transitioned a codebase from Python Flask to Node.js Express, boosting scalability and performance of the app.",
+            "Led the introduction of continuous integration and deployment pipelines, streamlining development processes and ensuring smooth delivery of updates to production environments",
+          ],
+          period: "November 2023 - Present",
+        },
+        {
           placement: "LVNDR Health",
           role: "Fullstack Developer",
           desc: [
-            "Designed and developed an engaging cross-platform mobile app and created a progressive web app using Flutter and Flutter-web",
-            "Reduced testing time by 20% by identifying and fixing compatibility issues across various devices and platforms, ensuring a seamless user experience.",
-            "Implemented a feature that shows calls to the user, increasing the number of calls by 60% over the previous version of the app.",
-            "Increased unit test coverage from 10% to 80% by adding unit tests for Mobx stores and services using the mocktail library.",
-            "Designed a backend using Firebase with cloud functions and Typescript to manage a data pipeline for a mobile and web app.",
+            "Developed an interactive cross-platform mobile app and crafted a progressive web app using Flutter and Flutter-web.",
+            "Identified and resolved compatibility issues across different devices and platforms, reducing testing time by 20% and ensuring a smooth user experience.",
+            "Added a feature displaying calls to users, resulting in a 60% increase in call volume compared to the previous app version.",
+            "Enhanced unit test coverage from 10% to 80% by incorporating unit tests for Mobx stores and services with the mocktail library.",
+            "Managed a data pipeline for a mobile and web app using Firebase with cloud functions and Typescript.",
           ],
-          period: "September 2022 - Present",
-          index: 0,
+          period: "September 2022 - Aug 2023",
         },
         {
           placement: "Ultainfinity Global Group",
           role: "Mobile Developer",
           desc: [
             "Built and delivered software solutions using a range of blockchain platforms and protocols, including Ethereum and Solana.",
-            "Implemented the Solana wallet mobile application for iOS and Android, including transaction sending and receiving, address management, and transaction history viewing.",
-            "Developed and tested the secure storage of sensitive user data for the application, resulting in an enhanced user experience with no incidents of data breaches.",
+            "Rolled out the Solana wallet mobile app for both iOS and Android, enabling functions such as sending and receiving transactions, managing addresses, and viewing transaction history.",
+            "Designed and verified the secure storage of confidential user data for the app, leading to an improved user experience without any data breaches occurring.",
           ],
           period: "April 2022 - September 2022",
-          index: 1,
         },
 
         {
           placement: "Green Mouse Technologies",
           role: "Mobile Developer",
           desc: [
-            "Developed, maintained, and managed complex software solutions for clients across various industries, including transportation and e-commerce, by regularly communicating with clients, managing deadlines, and delivering results",
+            "Developed, maintained, and overseen intricate software solutions for clients in various industries such as transportation and e-commerce. This was achieved by consistent client communication, deadline management, and successful project delivery.",
             "Supervised the technical aspects of complex and extensive undertakings, guaranteeing timely completion and maintaining exceptional levels of quality (90% of projects finished on time and with defect-free code) via defect tracking, version control, and development methodology",
             "Stayed up-to-date with the latest advancements in technology and advised clients on how to integrate new technologies into their solutions",
             "Developed mobile applications with efficient user interfaces and optimized performance for Android and iOS mobile environments, resulting in increased user satisfaction and a 23% increase in application downloads",
           ],
           period: "Dec 2021 - April 2022",
-          index: 2,
         },
         {
           placement: "Rentvec",
@@ -164,7 +123,6 @@ export default {
             "Optimized speed performance by 20% and reduced network latency by 30% by reducing the rate of the widget rebuild and implementing a caching mechanism.",
           ],
           period: "Dec 2021 - April 2022",
-          index: 3,
         },
         {
           placement: "HNG Internship",
@@ -176,7 +134,6 @@ export default {
             "Accelerated the development process by developing reusable components for later usage and reducing the production time of features from 2 weeks to 2 days.",
           ],
           period: `June 2020 - August 2020`,
-          index: 4,
         },
         {
           placement: `Bincom Dev Centre`,
@@ -188,7 +145,6 @@ export default {
             "Performed quality assurance tests to discover errors and optimize usability to improve the user experience of the application.",
           ],
           period: `June 2019 - December 2019`,
-          index: 5,
         },
       ],
       currentIndex: 0,
@@ -222,7 +178,7 @@ export default {
   flex-direction: row;
   width: 80%;
   align-self: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 li::marker {
@@ -252,10 +208,10 @@ li::marker {
   margin: 0 10%;
   display: none;
 }
-#experience {
+#exprnce {
   margin: 35px 20px;
 }
-#experience p {
+#exprnce p {
   margin: 0;
 }
 #place {

@@ -15,16 +15,22 @@
         href="https://www.linkedin.com/in/chukwuamaka-friday-14622a169/"
         id="icon"
       >
-        <linkedin-icon size="1.5x"></linkedin-icon>
+        <vue-feather type="linkedin" size="20" />
+
         <p>LinkedIn</p>
       </a>
       <a target="_blank" href="https://github.com/fridaychukwuamaka" id="icon">
-        <github-icon size="1.5x"></github-icon>
+        <vue-feather type="github" size="20" />
         <p>GitHub</p>
       </a>
-      <form  action="mailto:fridaychukwuamaka@gmail.com?subject= message" method="get"  enctype="text/plain">
+      <form
+        action="mailto:fridaychukwuamaka@gmail.com?subject= message"
+        method="get"
+        enctype="text/plain"
+      >
         <button id="icon" class="email-icon">
-          <mail-icon size="1.5x"></mail-icon>
+          <vue-feather type="mail" size="20" />
+
           <p>Email</p>
         </button>
       </form>
@@ -35,19 +41,12 @@
 </template>
 
 <script>
-import {
-  LinkedinIcon,
-  GithubIcon,
-  // TwitterIcon,
-  MailIcon,
-} from "vue-feather-icons";
+import VueFeather from "vue-feather";
+
 export default {
   name: "ContactPage",
   components: {
-    LinkedinIcon,
-    GithubIcon,
-    // TwitterIcon,
-    MailIcon,
+    "vue-feather": VueFeather,
   },
 };
 </script>

@@ -5,48 +5,40 @@
       href="https://www.linkedin.com/in/chukwuamaka-friday-14622a169/"
       id="icon"
     >
-      <linkedin-icon size="1.2x"></linkedin-icon>
+      <vue-feather type="linkedin" size="20" />
     </a>
     <a target="_blank" href="https://github.com/fridaychukwuamaka" id="icon">
-      <github-icon size="1.2x"></github-icon>
+      <vue-feather type="github" size="20" />
     </a>
     <form
       action="mailto:fridaychukwuamaka@gmail.com?subject= message"
       method="get"
       enctype="text/plain"
     >
-      <button style="cursor: pointer;" id="icon" class="email-icon">
-        <mail-icon size="1.2x"></mail-icon>
+      <button style="cursor: pointer" id="icon" class="email-icon">
+        <vue-feather type="mail" size="20" />
       </button>
     </form>
   </div>
 </template>
 
 <script>
-import {
-  LinkedinIcon,
-  GithubIcon,
-  // TwitterIcon,
-  MailIcon,
-} from "vue-feather-icons";
+import VueFeather from "vue-feather";
 
 export default {
   name: "SideBar",
   components: {
-    LinkedinIcon,
-    GithubIcon,
-    // TwitterIcon,
-    MailIcon,
+    "vue-feather": VueFeather,
   },
 };
 </script>
 
 <style scoped>
-a{
-    cursor: pointer;
+a {
+  cursor: pointer;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 #side-bar-column {
   display: flex;

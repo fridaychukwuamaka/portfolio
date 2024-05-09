@@ -42,11 +42,8 @@
                 <div :class="{ selected: selectMenu == 4 }"></div>
               </li>
             </a>
-            <a target="_blank" href="https://drive.google.com/file/d/1GyMHEb7FsO8lZA01Ky9RrBo3Y738yP07/view?usp=drive_link" download>
-              <li id="download">
-                Resume
-              </li>
-            </a>
+
+            <li @click="openPdf" id="download">Resume</li>
           </ul>
         </div>
       </div>
@@ -90,6 +87,9 @@ export default {
     }, */
     toggle(val) {
       this.selectMenu = val;
+    },
+    openPdf() {
+      window.open("/path/to/your/pdf/file.pdf");
     },
   },
 };

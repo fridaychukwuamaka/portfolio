@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <transition name="fade3" appear>
       <div v-if="!splashScreen">
         <SplashScreen />
@@ -7,25 +7,25 @@
     </transition>
 
     <div id="others" v-if="splashScreen">
-      <Header />
+      <HeaderSection />
 
       <div id="not-mobile">
         <router-view> </router-view>
       </div>
 
       <div id="mobile">
-        <Home />
+        <HomePage />
         <div id="page">
-          <About />
+          <AboutPage />
         </div>
         <div id="work">
-          <Work />
+          <WorkPage />
         </div>
         <div id="experience">
-          <Experience />
+          <ExperiencePage />
         </div>
         <div id="contact">
-          <Contact />
+          <ContactPage />
         </div>
       </div>
 
@@ -63,12 +63,7 @@
           </router-link>
         </ul>
         <div id="download-cv">
-          <a
-            target="_blank"
-            href="https://drive.google.com/file/d/1GyMHEb7FsO8lZA01Ky9RrBo3Y738yP07/view?usp=drive_link"
-            download
-            >Resume</a
-          >
+          <a @click="openPdf" download>Resume</a>
         </div>
       </div>
       <div id="side-bar">
@@ -77,11 +72,12 @@
       <transition name="fade" appear>
         <div id="to-top">
           <a href="#mobile"
-            ><chevron-up-icon
+            ><vue-feather
+              type="chevron-up"
               class="chevron-up-icon"
-              size="1.5x"
-            ></chevron-up-icon
-          ></a>
+              size="1.5rem"
+            />
+          </a>
         </div>
       </transition>
     </div>
@@ -89,30 +85,28 @@
 </template>
 
 <script>
-import Home from "./components/Home";
-import About from "./components/About";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
-import Experience from "./components/Experience";
-// import Header from "./components/Header";
-// import MoreAbout from "./components/MoreAbout";
+import HomePage from "./components/Home";
+import AboutPage from "./components/About";
+import WorkPage from "./components/Work";
+import ContactPage from "./components/Contact";
+import ExperiencePage from "./components/Experience";
+import HeaderSection from "./components/Header";
+import VueFeather from "vue-feather";
 import SplashScreen from "./components/SplashScreen";
 import SideBar from "./components/SideBar";
-import { ChevronUpIcon } from "vue-feather-icons";
 
 export default {
   name: "App",
   components: {
-    // Header,
+    "vue-feather": VueFeather,
+    HeaderSection,
     SplashScreen,
     SideBar,
-    Home,
-    About,
-    // MoreAbout,
-    Work,
-    Experience,
-    ChevronUpIcon,
-    Contact,
+    HomePage,
+    AboutPage,
+    WorkPage,
+    ExperiencePage,
+    ContactPage,
   },
   data: () => {
     return {
@@ -126,6 +120,9 @@ export default {
     activeLink(val) {
       this.link = val;
     },
+    openPdf() {
+      window.open("/files/resume.pdf");
+    },
   },
   beforeUpdate: function () {
     this.currentRoute = window.location.pathname;
@@ -134,6 +131,7 @@ export default {
     this.splashScreen = false;
     setTimeout(() => {
       this.splashScreen = true;
+      console.log("splashScreen", this.splashScreen);
     }, 1500);
   },
 };

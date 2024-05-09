@@ -2,7 +2,7 @@
   <div id="header">
     <div class="heading">
       <img id="logo" alt="logo" src="../assets/images/Group 7.png" />
-      <menu-icon id="menu-icon" @click="menu = !menu"></menu-icon>
+      <vue-feather type="menu" size="20" id="menu-icon" @click="menu = !menu" />
     </div>
 
     <transition name="drawer-open" animation="transition">
@@ -10,7 +10,12 @@
         <div @click="menu = !menu" id="shadowed"></div>
 
         <div id="none-shadow">
-          <arrow-left-icon id="back" @click="menu = !menu"></arrow-left-icon>
+          <vue-feather
+            type="arrow-left"
+            size="20"
+            id="back"
+            @click="menu = !menu"
+          />
           <ul>
             <a :href="'#mobile'">
               <li @click="toggle(0)">
@@ -45,12 +50,7 @@
             </a>
 
             <li id="download">
-              <a
-                target="_blank"
-                href="https://drive.google.com/file/d/1GyMHEb7FsO8lZA01Ky9RrBo3Y738yP07/view?usp=drive_link"
-                download
-                >Resume</a
-              >
+              <a @click="openPdf" download>Resume</a>
             </li>
           </ul>
         </div>
@@ -60,12 +60,12 @@
 </template>
 
 <script>
-import { MenuIcon, ArrowLeftIcon } from "vue-feather-icons";
+import VueFeather from "vue-feather";
+
 export default {
-  name: "Header",
+  name: "HeaderSection",
   components: {
-    MenuIcon,
-    ArrowLeftIcon,
+    "vue-feather": VueFeather,
   },
   data: () => {
     return {
@@ -74,9 +74,9 @@ export default {
     };
   },
   methods: {
-    /*  showMenu: () => {
-      menu = !menu;
-    }, */
+    openPdf() {
+      window.open("/files/resume.pdf");
+    },
     toggle(val) {
       this.selectMenu = val;
     },
