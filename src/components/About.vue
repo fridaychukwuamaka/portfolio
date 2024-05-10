@@ -10,15 +10,13 @@
         <transition name="slide-home-up" appear>
           <div>
             <p id="text">
-              My name is <b>Friday Chukwuamaka Kareen</b> I am a mobile
-              developer based in Nigeria. I love to solve problems. Whether it's
-              finding the most elegant way to write a line of code or figuring
-              out which chord fits best into a progression, I love the challenge
-              of finding a way and discovering solutions. As long as there's a
-              problem to solve or a challenge to puzzle over, it's bound to be
-              something I love!. One of my biggest strengths is translating
-              UI/UX design to code you can see the evidence from my projects and
-              this website.
+              Hello, I'm <b>Friday Chukwuamaka Kareen</b>, a mobile developer
+              residing in Nigeria. I have a passion for problem-solving, whether
+              it involves finding the most elegant code solution or determining
+              the perfect chord progression. I thrive on challenges and enjoy
+              discovering innovative solutions. My forte lies in translating
+              UI/UX designs into visible code, evident in my projects and this
+              website. Recently, I have been working with the following:
             </p>
             <p id="text">
               Here are a few technologies I've been working with recently:
@@ -48,12 +46,9 @@
 </template>
 
 <script>
-// import MoreAbout from "./MoreAbout";
 export default {
   name: "AboutPage",
-  components: {
-    // MoreAbout,
-  },
+  components: {},
   props: {
     msg: String,
   },
@@ -102,7 +97,6 @@ ul.skills-list {
 #page {
   min-height: calc(100vh - 144.5px);
   display: flex;
-  /* width: 100%; */
   flex-direction: column;
   margin-top: 69.5px;
   /* margin-bottom: 75px; */
@@ -186,6 +180,15 @@ ul.skills-list {
   font-family: Montserrat-Regular;
   text-align: justify;
 }
+
+/* 767px and above */
+@media only screen and (min-width: 768px) {
+  #row {
+    margin: 0 5%;
+    align-self: center;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   #page {
     padding: 15px;
