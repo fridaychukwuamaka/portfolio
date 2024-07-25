@@ -6,8 +6,7 @@
     </div>
 
     <p id="contact-text">
-      You want to talk to me, feel free to email or DM me using the following
-      platforms.
+      If you want to talk to me, feel free to email or DM me using the following platforms.
     </p>
     <div id="icon-row">
       <a
