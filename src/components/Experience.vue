@@ -70,7 +70,7 @@ export default {
     return {
       experience: [
         {
-          placement: "ACIAGA Inc",
+          placement: "Yourchat ai",
           role: "Fullstack Developer",
           desc: [
             "Created and released two AI-driven mobile apps, accumulating more than 10,000 downloads, demonstrating expertise in Flutter framework and AI integration.",
