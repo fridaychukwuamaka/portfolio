@@ -10,14 +10,30 @@
         <transition name="slide-home-up" appear>
           <div>
             <p id="text">
-              Hello, I'm <b>Friday Chukwuamaka Kareen</b>, a mobile developer
-              residing in Nigeria. I have a passion for problem-solving, whether
-              it involves finding the most elegant code solution or determining
-              the perfect chord progression. I thrive on challenges and enjoy
-              discovering innovative solutions. My forte lies in translating
-              UI/UX designs into visible code, evident in my projects and this
-              website. Recently, I have been working with the following:
+              Hi, I'm <b>Friday Chukwuamaka Kareen</b>, a mobile developer based
+              in Nigeria with a deep passion for solving problems through
+              innovative solutions. Whether it’s crafting clean, efficient code
+              or finding the perfect balance in a chord progression, I thrive on
+              challenges that push me to think creatively.
             </p>
+
+            <p id="text">
+              While my primary expertise lies in Flutter, I also work with
+              Arduino Express and Vue from time to time, extending my
+              development skills into hardware projects and web interfaces. This
+              diversity in my work allows me to create unique, integrated
+              solutions that blend both mobile and interactive systems.
+            </p>
+            <p id="text">
+              Beyond development, I have a strong interest in music, and I find
+              joy in composing and exploring chord progressions in my free time.
+            </p>
+            <p id="text">
+              Lately, I’ve been diving into cutting-edge technologies,
+              continuously expanding my skillset and staying ahead of trends to
+              deliver modern, high-quality solutions.
+            </p>
+
             <p id="text">
               Here are a few technologies I've been working with recently:
             </p>
@@ -176,6 +192,7 @@ ul.skills-list {
   line-height: 35px;
   margin-right: 50px;
   margin-top: 0;
+  margin-bottom: 15px;
   font-size: 0.85em;
   font-family: Montserrat-Regular;
   text-align: justify;
