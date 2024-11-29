@@ -75,7 +75,7 @@ export default {
   },
   methods: {
     openPdf() {
-      window.open("/files/resume.pdf");
+      window.open("/files/Chukwuamaka_Frontend_Developer_Resume.pdf");
     },
     toggle(val) {
       this.selectMenu = val;
