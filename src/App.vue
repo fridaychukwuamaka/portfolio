@@ -121,7 +121,7 @@ export default {
       this.link = val;
     },
     openPdf() {
-      window.open("/files/Chukwuamaka_Frontend_Developer_Resume.pdf");
+      window.open("/files/Chukwuamaka_Mobile_Developer_Resume.pdf");
     },
   },
   beforeUpdate: function () {
