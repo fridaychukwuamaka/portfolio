@@ -50,7 +50,7 @@
         <transition name="fade3" appear>
           <img
             id="image"
-            src="../assets/images/IMG_20200810_170143564~3.jpeg"
+            src="../assets/images/dp.jpg"
             alt="pix"
           />
         </transition>
