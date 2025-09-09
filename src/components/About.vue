@@ -10,23 +10,20 @@
         <transition name="slide-home-up" appear>
           <div>
             <p id="text">
-              Hi, I'm <b>Friday Chukwuamaka Kareen</b>, a mobile developer based
-              in Nigeria with a deep passion for solving problems through
-              innovative solutions. Whether it’s crafting clean, efficient code
-              or finding the perfect balance in a chord progression, I thrive on
-              challenges that push me to think creatively.
+              Hi, I'm <b>Chukwuamaka Friday</b>, a <b>mobile developer</b> based
+              in Nigeria with a strong focus on building scalable and
+              user-centric applications using <b>Flutter</b>. My expertise
+              extends into hardware integration with Arduino Express and web
+              development with Vue, enabling me to create versatile,
+              cross-platform solutions
             </p>
 
             <p id="text">
-              While my primary expertise lies in Flutter, I also work with
-              Arduino Express and Vue from time to time, extending my
-              development skills into hardware projects and web interfaces. This
-              diversity in my work allows me to create unique, integrated
-              solutions that blend both mobile and interactive systems.
-            </p>
-            <p id="text">
-              Beyond development, I have a strong interest in music, and I find
-              joy in composing and exploring chord progressions in my free time.
+              I thrive on solving complex problems with clean, efficient code
+              and continuously explore emerging technologies to deliver modern,
+              high-quality products. Outside of development, I enjoy music
+              composition, where I apply the same creativity and attention to
+              detail that I bring to my work.
             </p>
             <p id="text">
               Lately, I’ve been diving into cutting-edge technologies,
@@ -48,11 +45,7 @@
           </div>
         </transition>
         <transition name="fade3" appear>
-          <img
-            id="image"
-            src="../assets/images/dp.jpg"
-            alt="pix"
-          />
+          <img id="image" src="../assets/images/dp.jpg" alt="pix" />
         </transition>
       </div>
       <!-- <div id="spaced"></div> -->
@@ -78,16 +71,6 @@ export default {
 .slide-home-up-enter-active {
   opacity: 0;
   animation: slide-home-up-in 1s ease-out 1s forwards;
-  /* transition:  opacity 1s; */
-  /* opacity: 0; */
-  /* opacity: 1 !important; */
-}
-.slide-home-up-leave {
-  /* opacity: 1 !important; */
-}
-.slide-home-up-leave-active {
-  /* animation: slide1-out 1s ease-out forwards; */
-  /* opacity: 1 !important; */
 }
 
 ul.skills-list {
@@ -129,10 +112,7 @@ ul.skills-list {
   cursor: pointer;
   /* transform: rotateY(180deg); */
 }
-#image:hover {
-  /* animation: flip  ease-in-out 14s forwards; */
-  /* transform: rotateY(0deg); */
-}
+
 @keyframes flip {
   from {
     transform: rotateY(-180deg);

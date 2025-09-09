@@ -70,6 +70,18 @@ export default {
     return {
       experience: [
         {
+          placement: "DrAnsay",
+          role: "Mobile Developer",
+          desc: [
+            "Solely developed and released the first production version of the company’s medical cannabis mobile app, establishing the architecture, CI/CD pipeline, and initial feature set.",
+            "Scaled the app to 101K+ downloads with a 3.5★ rating (issues largely tied to customer service), while proactively implementing an in-app feedback system to capture and resolve user-reported bugs faster.",
+            "Built and integrated a medical questionnaire workflow, enabling patients to securely provide health information for prescriptions and consultations.",
+            "Developed a combined payment system, allowing seamless transactions across pharmacies, doctors, and app services, improving user convenience and compliance.",
+            "Delivered and maintained critical features including checkout flow, prescription management, and prescription tracking to prevent abuse, while optimizing app performance and reliability.",
+          ],
+          period: "November 2023 - Present",
+        },
+        {
           placement: "Yourchat ai",
           role: "Fullstack Developer",
           desc: [
@@ -77,7 +89,7 @@ export default {
             "Efficiently transitioned a codebase from Python Flask to Node.js Express, boosting scalability and performance of the app.",
             "Led the introduction of continuous integration and deployment pipelines, streamlining development processes and ensuring smooth delivery of updates to production environments",
           ],
-          period: "November 2023 - Present",
+          period: "November 2023 - February 2024",
         },
         {
           placement: "LVNDR Health",
@@ -165,8 +177,7 @@ export default {
   flex-direction: column;
   padding: 15px;
 }
-#chevron-right-icon {
-}
+
 #tab-view {
   width: 100%;
 }
@@ -261,13 +272,10 @@ li::marker {
   margin-bottom: 60px;
 }
 
-.slide-enter {
-}
 .slide-enter-active {
   animation: slide-in 1s ease-in forwards;
 }
-.slide-leave {
-}
+
 .slide-leave-active {
   animation: slide-out 1s ease-out forwards;
   display: none;
@@ -297,13 +305,6 @@ li::marker {
   animation: slide1-in 1s ease-out 1s forwards;
   /* transition:  opacity 1s; */
   /* opacity: 0; */
-  /* opacity: 1 !important; */
-}
-.slide1-leave {
-  /* opacity: 1 !important; */
-}
-.slide1-leave-active {
-  /* animation: slide1-out 1s ease-out forwards; */
   /* opacity: 1 !important; */
 }
 

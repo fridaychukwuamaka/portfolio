@@ -74,10 +74,10 @@ export default {
     return {
       works: [
         {
-          title: "Dr Ansay",
+          title: "DrAnsay",
           detail:
-            "Dr Ansay is a mobile application that provides users with access to a wide range of medical services, including consultations, prescriptions, and appointments. The app is designed to be user-friendly and intuitive, making it easy for users to find the information they need and connect with healthcare professionals.",
-          appLink: "https://apps.apple.com/app/dr-ansay/id6523437787",
+            "DrAnsay is a mobile application that provides users with access to a wide range of medical services, including consultations, prescriptions, and appointments. The app is designed to be user-friendly and intuitive, making it easy for users to find the information they need and connect with healthcare professionals. The app is currently live on the iOS App Store in Germany, but for convenience you can also access it outside Germany via the APK link provided below.",
+          appLink: "https://storage.googleapis.com/platform-cdn/apps/app-production-release.apk",
 
           tools: ["Flutter, Riverpod, Hive, Firebase"],
         },
