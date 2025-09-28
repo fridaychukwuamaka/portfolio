@@ -124,7 +124,7 @@ export default {
             "Advised clients on integrating emerging technologies to enhance their solutions.",
             "Developed high-performance mobile apps for Android (Google Play Store) and iOS, boosting user satisfaction and increasing downloads by 23%.",
           ],
-          period: "Dec 2021 - April 2022",
+          period: "December 2021 - April 2022",
         },
         {
           placement: "Rentvec",
@@ -135,14 +135,14 @@ export default {
             "Using third-party libraries and APIs to integrate advanced features, including push notifications, maps, and camera functions, leading to a higher customer engagement and retention.",
             "Optimized speed performance by 20% and reduced network latency by 30% by reducing the rate of the widget rebuild and implementing a caching mechanism.",
           ],
-          period: "Dec 2021 - April 2022",
+          period: "September 2020 - August 2021",
         },
         {
           placement: "HNG Internship",
           role: "Mobile Developer",
           desc: [
-            "Contributed to the development of a mobile application that generates merchant receipts and manages inventory within a team of four developers, using Agile development, and test-driven development.",
-            "Improved the overall code quality by performing code reviews and testing the beta release of the app, to ensure proper functionality and reduce the number of bugs reported by beta testers.",
+            "Contributed to the development of a mobile application that generates merchant receipts and manages inventory within a team of four developers, using Agile development and test-driven development.",
+            "Improved the overall code quality by performing code reviews and testing the beta release of the app to ensure proper functionality and reduce the number of bugs reported by beta testers.",
             "Conducted comprehensive testing of the application code using multiple devices, which resulted in superior mobile responsiveness on all screen sizes.",
             "Accelerated the development process by developing reusable components for later usage and reducing the production time of features from 2 weeks to 2 days.",
           ],
